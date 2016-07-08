@@ -1,0 +1,64 @@
+#mainWrapper {
+max-width:960px;
+width:100%;
+margin: auto;
+}
+p {
+    text-align: justify;
+}
+
+.secondaryNavigation, .primaryNav {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #0971ab;
+}
+
+.logo {
+    background-color: aquamarine;
+    width:150px;
+    height: 50px;
+    float: left;
+    margin-top:15px;
+    margin-left: 5px;
+}
+
+ul,li {
+    list-style: none;
+    float: left;
+    padding:10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0971ab;
+}
+
+.primaryNav a {
+    color:#0971ab;
+    border: solid 2px #0971ab;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.primaryNav a:hover {
+    color:skyblue;
+    border: solid 2px skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.missionStatement {
+    font-family: arial;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    color:navy;
+}
+
+.aboutText {
+    font-family: verdana;
+    color:#0971ab;
+}
