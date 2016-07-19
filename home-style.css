@@ -1,34 +1,53 @@
-#mainWrapper {
-max-width:960px;
-width:100%;
-margin: auto;
+* {
+    box-sizing: border-box;
 }
+
 p {
     text-align: justify;
 }
 
-.secondaryNavigation, .primaryNav {
-    display: inline-block;
-    width: 100%;
+.secondaryNavigation,
+.primaryNav {
     background-color: #fff;
-    border-bottom: solid 1px #0971ab;
+    display: flex;
+}
+
+.hrline {
+    background: linear-gradient(to bottom, rgba(198, 198, 198, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    height: 5px;
+}
+
+.navigation {
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
 }
 
 .logo {
     background-color: aquamarine;
-    width:150px;
-    height: 50px;
+    width: 300px;
+    height: 75px;
     float: left;
-    margin-top:15px;
+    margin-top: px;
     margin-left: 5px;
 }
 
-ul,li {
+ul,
+li {
     list-style: none;
     float: left;
-    padding:10px;
+    padding: 10px;
     text-transform: uppercase;
     font-family: sans-serif;
+    font-size: 12px;
+}
+
+.secondaryNavigation li {
+    font-size: 14px;
 }
 
 a {
@@ -37,28 +56,171 @@ a {
 }
 
 .primaryNav a {
-    color:#0971ab;
+    color: #0971ab;
     border: solid 2px #0971ab;
     border-radius: 5px;
-    padding:10px;
+    padding: 5px;
 }
 
 .primaryNav a:hover {
-    color:skyblue;
+    color: skyblue;
     border: solid 2px skyblue;
-    border-radius: 5px;
-    padding: 10px;
-    
 }
+
+.secondaryNavigation a:hover {
+    color: skyblue;
+}
+
+.splashPage {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    background-color:black;
+}
+
 .missionStatement {
     font-family: arial;
-    width:50%;
+    width: 50%;
     margin: auto;
     text-align: center;
-    color:navy;
+    color: #fff;
+    padding: 2%;
 }
 
 .aboutText {
     font-family: verdana;
-    color:#0971ab;
+    color: #fff;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#tfnewsearch {
+    right: 0px;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.tftextinput2 {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #0971ab;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.tfbutton2 {
+    margin: 0;
+    padding: 5px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #0971ab;
+    background: #0971ab;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.tfbutton2:hover {
+    text-decoration: none;
+    background: #007ead;
+}
+
+
+/* Fixes submit button height problem in Firefox */
+
+.tfbutton2::-moz-focus-inner {
+    border: 0;
+}
+
+.tfclear {
+    clear: both;
+}
+
+.buttonSplash {
+    font-family: Verdana, sans-serif;
+    text-decoration: underline;
+    width: 12%;
+    text-align: center;
+}
+
+.productSection {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.productTile {
+    width: 32%;
+    background-color: aquamarine;
+    height: 100px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    box-shadow: 1px 1px 5px grey;
+    background-color: #fff;
+}
+
+.productTile--icon {
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 5px;
+}
+
+.productTile--title {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+}
+
+.productTile--description {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+
+.productTile-dnaSubway {
+
+}
+
+.productTile-discoveryEnvironment {
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+    
+    #tfnewsearch {
+        display: none;
+    }
+    .secondaryNavigation {
+        display: none;
+    }
+    
+    li {
+    width
+    }
+        .productTile {
+    width: 100%;
+            margin: auto;
+            margin-bottom: 1%;
+    }
 }
