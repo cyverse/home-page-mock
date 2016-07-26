@@ -184,11 +184,10 @@ a {
 }
 
 .productCard {
-    width: 32%;
-    height: 100px;
-    float: left;
-    margin-left: 1%;
-    margin-top: 1%;
+    width: 100%;
+    min-height: 150px;
+    margin: auto;
+    margin-bottom: 1%;
     box-shadow: 1px 1px 5px grey;
     background-color: #fff;
 }
@@ -214,12 +213,10 @@ font-family: verdana, helvetica, sans-serif;
     font-size: 12px;
     padding: 5px;
     display: inline-block;
-    width: 50%;
+    width: 75%;
     text-align: left;
     margin: auto;
-    position: relative;
-    top: -39px;
-    left: 14px
+
 }
 
 .productCard-dnaSubway {
@@ -230,7 +227,6 @@ font-family: verdana, helvetica, sans-serif;
 }
 
 .title-Discoveryenvironment {
-    left:124px;
 }
 
 .homePage-button--blue {
@@ -243,6 +239,7 @@ font-family: verdana, helvetica, sans-serif;
     font-size: 14px;
     font-family: Verdana, Helvetica, sans-serif;
     border-radius: 3px;
+    width: 15%;
 }
 @media only screen and (max-width: 500px) {
     
