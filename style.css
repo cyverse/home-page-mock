@@ -15,6 +15,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #e2e2e2;
+}
 
 .secondaryNav,
 .primaryNav {
@@ -150,28 +153,51 @@ a {
     margin: auto;
     margin-bottom: 1%;
     box-shadow: 1px 1px 5px grey;
-    background-color: #fff;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(255,255,255,0.56)), color-stop(100%, rgba(9,114,171,0)));
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0972ab', GradientType=1 );
 }
 
 .productCard--icon {
-    background-color: aquamarine;
+background-color: aquamarine;
     height: 85px;
     width: 85px;
     margin: 10px;
-    float: left;
+    display: inline-block;
+}
+
+.productCard-content {
+       width: 88%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    top: -45px;
 }
 
 .productCard--title {
     font-family: verdana, helvetica, sans-serif;
     font-size: 14px;
     padding: 10px;
+    display:block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .productCard--description {
 font-family: verdana, helvetica, sans-serif;
 font-size: 12px;
 padding: 5px;
+margin:0 auto;
+margin-bottom: 10px;
 
+}
+
+.productCard-atmosphere {
 }
 
 .productCard-dnaSubway {
@@ -184,6 +210,11 @@ padding: 5px;
 .title-Discoveryenvironment {
 }
 
+.buttonWrapper {
+    padding:10px;
+    display: inline-block;
+}
+
 .homePage-button--blue {
     background-color: #0971ab;
     border: none;
@@ -194,7 +225,7 @@ padding: 5px;
     font-size: 14px;
     font-family: Verdana, Helvetica, sans-serif;
     border-radius: 3px;
-    width: 15%;
+    width: 100px;
     display: inline-block;
 }
 
