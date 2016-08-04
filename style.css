@@ -51,8 +51,7 @@ body {
     margin:5px;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
     float: left;
     padding: 10px;
@@ -86,9 +85,8 @@ a {
     color: skyblue;
 }
 
-.Banner-wrapper {
+.Banner {
     width: 100%;
-    margin: auto;
     background-color:black;
 }
 
@@ -96,7 +94,6 @@ a {
     max-width: 400px;
     min-height: 200px;
     float: right;
-    margin-right: 15%;
     background-color:grey;
 }
 .Banner-missionStatement{
@@ -140,12 +137,6 @@ a {
     margin-bottom: 10px;
 }
 
-.productSection {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-
 .ourProducts-wrapper {
     padding:10px;
     margin-bottom: 10px;
@@ -186,7 +177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard-content {
-       width: 88%;
+    width: 88%;
     display: inline-block;
     margin: 0 auto;
     position: relative;
@@ -197,24 +188,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     font-size: 14px;
     padding: 10px;
     display:block;
-    max-width: 100%;
     margin: 0 auto;
 }
 
 .productCard--description {
-font-family: verdana, helvetica, sans-serif;
-font-size: 12px;
-padding: 5px;
-margin:0 auto;
-margin-bottom: 10px;
-
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    margin:0 auto;
+    margin-bottom: 10px;
 }
 
 .productCard-atmosphere {
 }
 
 .productCard-dnaSubway {
-
 }
 
 .productCard-discoveryEnvironment {
@@ -298,7 +286,6 @@ margin-bottom: 10px;
 
     .Banner-wrapper, .Banner-mainContent {
         width:100%;
-        max-width: 100%;
         margin-right: 0px;
     }
     
@@ -309,12 +296,9 @@ margin-bottom: 10px;
         display: none;
     }
     
-    li {
-    width
-    }
-        .productCard {
-    width: 100%;
-            margin: auto;
-            margin-bottom: 1%;
+    .productCard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1%;
     }
 }
