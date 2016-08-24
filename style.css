@@ -15,32 +15,43 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #e2e2e2;
+}
 
 .secondaryNav,
 .primaryNav {
     background-color: #fff;
     display: flex;
         box-shadow: 1px 1px 5px grey;
+
+}
+
+.logoHeader {
+    width:100%;
+    max-width: 550px;
 }
 
 
-.navigation {
-    margin: auto;
+.wrapper {
     width: 100%;
-    max-width: 960px;
+    padding:0 10px;
+    max-width: 1100px;
+    margin:0 auto;
+}
+
+.navigation {
+    width: 100%;
 }
 
 .navLogo {
-    background-color: aquamarine;
     width: 300px;
     height: 75px;
     float: left;
-    margin-top: px;
-    margin-left: 5px;
+    margin:5px;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
     float: left;
     padding: 10px;
@@ -74,22 +85,20 @@ a {
     color: skyblue;
 }
 
-.banner--wrapper {
+.Banner {
     width: 100%;
-    margin: auto;
     background-color:black;
 }
 
-.mainContent-Banner--wrapper {
+.Banner-mainContent {
     max-width: 400px;
     min-height: 200px;
     float: right;
-    margin-right: 15%;
     background-color:grey;
 }
-.missionStatement-Banner{
+.Banner-missionStatement{
     font-family: arial;
-    width: 50%;
+    width: 100%;
     margin: auto;
     text-align: center;
     color: #fff;
@@ -99,9 +108,126 @@ a {
 .aboutText-Banner {
     font-family: verdana;
     color: #fff;
-    max-width: 80%;
     margin: auto;
-    margin-top: 2%;
+    padding: 10px;
+}
+
+
+.learnMore-Banner {
+    font-family: Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.buttonBanner {
+    font-family: Verdana, sans-serif;
+    width: 49%;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    clear: both;
+    position: relative;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.ourProducts-wrapper {
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.productCard {
+    width: 100%;
+    min-height: 150px;
+    margin: auto;
+    margin-bottom: 1%;
+    box-shadow: 1px 1px 5px grey;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(255,255,255,0.56)), color-stop(100%, rgba(9,114,171,0)));
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0972ab', GradientType=1 );
+}
+
+.productCard--icon {
+    min-height: 35px;
+    width: 85px;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+
+.iconProduct {
+    width:100%;
+    max-width: 85px;
+}
+
+.iconDatastore {
+    width:75%;
+}
+
+.productCard-content {
+    width: 88%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.productCard--title {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    display:block;
+    margin: 0 auto;
+}
+
+.productCard--description {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+
+.productCard-atmosphere {
+}
+
+.productCard-dnaSubway {
+}
+
+.productCard-discoveryEnvironment {
+}
+
+.title-Discoveryenvironment {
+}
+
+.buttonWrapper {
+    padding:10px;
+    display: inline-block;
+}
+
+.homePage-button--blue {
+    background-color: #0971ab;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    border-radius: 3px;
+    width: 100px;
+    display: inline-block;
 }
 
 #tfnewsearch {
@@ -156,92 +282,12 @@ a {
 .tfclear {
     clear: both;
 }
-
-.learnMore-Banner {
-    font-family: Verdana, sans-serif;
-    text-decoration: underline;
-    width: 12%;
-    text-align: center;
-    color: #fff;
-}
-
-.buttonBanner {
-    font-family: Verdana, sans-serif;
-    width: 12%;
-    text-align: center;
-    color: #000;
-    background-color: #fff;
-    border-radius: 3px;
-    clear:both;
-    position: relative;
-    display: inline-block;
-}
-
-.productSection {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-
-.productCard {
-    width: 100%;
-    min-height: 150px;
-    margin: auto;
-    margin-bottom: 1%;
-    box-shadow: 1px 1px 5px grey;
-    background-color: #fff;
-}
-
-.productCard--icon {
-    background-color: aquamarine;
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin: 5px;
-}
-
-.productCard--title {
-    font-family: verdana, helvetica, sans-serif;
-    font-size: 12px;
-    position: relative;
-    top: 57px;
-    right: 53px;
-}
-
-.productCard--description {
-font-family: verdana, helvetica, sans-serif;
-    font-size: 12px;
-    padding: 5px;
-    display: inline-block;
-    width: 75%;
-    text-align: left;
-    margin: auto;
-
-}
-
-.productCard-dnaSubway {
-
-}
-
-.productCard-discoveryEnvironment {
-}
-
-.title-Discoveryenvironment {
-}
-
-.homePage-button--blue {
-    background-color: #0971ab;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: Verdana, Helvetica, sans-serif;
-    border-radius: 3px;
-    width: 15%;
-}
 @media only screen and (max-width: 500px) {
+
+    .Banner-wrapper, .Banner-mainContent {
+        width:100%;
+        margin-right: 0px;
+    }
     
     #tfnewsearch {
         display: none;
@@ -250,12 +296,9 @@ font-family: verdana, helvetica, sans-serif;
         display: none;
     }
     
-    li {
-    width
-    }
-        .productCard {
-    width: 100%;
-            margin: auto;
-            margin-bottom: 1%;
+    .productCard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1%;
     }
 }
