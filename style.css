@@ -137,6 +137,12 @@ a {
     margin-bottom: 10px;
 }
 
+.productSection {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
 .ourProducts-wrapper {
     padding:10px;
     margin-bottom: 10px;
@@ -177,7 +183,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard-content {
-    width: 88%;
+       width: 88%;
     display: inline-block;
     margin: 0 auto;
     position: relative;
@@ -188,21 +194,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     font-size: 14px;
     padding: 10px;
     display:block;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .productCard--description {
-    font-family: verdana, helvetica, sans-serif;
-    font-size: 12px;
-    padding: 5px;
-    margin:0 auto;
-    margin-bottom: 10px;
+font-family: verdana, helvetica, sans-serif;
+font-size: 12px;
+padding: 5px;
+margin:0 auto;
+margin-bottom: 10px;
+
 }
 
 .productCard-atmosphere {
 }
 
 .productCard-dnaSubway {
+
 }
 
 .productCard-discoveryEnvironment {
@@ -282,10 +291,62 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .tfclear {
     clear: both;
 }
+
+    /* TABBED MENU */
+
+.menuTabbed-wrapper {
+    background-color: pink;
+    min-height: 500px;
+    box-shadow: 1px 1px 5px grey;
+    margin-bottom: 10px;
+}
+
+/* Explore CyVerse */
+
+.informationalLinks-wrapper {
+
+    background-color: lightgreen;
+    box-shadow: 1px 1px 5px grey;
+    margin-bottom: 10px;
+    min-height: 300px;
+    width: 50%;
+    float: left;
+}
+
+.referenceLinks {
+padding-top:10px;
+}
+
+.referenceLinks-leftColumn, .referenceLinks-rightColumn {
+    width:49%;
+    display: inline-block;
+}
+
+.referenceLinks-leftColumn {
+    border-right: solid 1px grey;
+}
+
+.referenceLink {
+    float: left;
+    clear: both;
+    padding:10px;
+}
+
+/* Connect with Us */
+
+.menuConnect-wrapper {
+    background-color: skyblue;
+    box-shadow: 1px 1px 5px grey;
+    width: 50%;
+    min-height: 300px;
+    float: left;
+}
+
 @media only screen and (max-width: 500px) {
 
     .Banner-wrapper, .Banner-mainContent {
         width:100%;
+        max-width: 100%;
         margin-right: 0px;
     }
     
@@ -296,9 +357,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         display: none;
     }
     
-    .productCard {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1%;
+    li {
+    width
+    }
+        .productCard {
+    width: 100%;
+            margin: auto;
+            margin-bottom: 1%;
     }
 }

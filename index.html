@@ -10,22 +10,24 @@
 </head>
 <body> 
 
-    <!--DESKTOP NAVIGATION SECTION -->
+<!--DESKTOP NAVIGATION SECTION -->
+
+
     <div class="navigation primaryNav">
         <div class="wrapper">
 
             <div class="navLogo"> <img src="images/logo.png" class="logoHeader"></div>
 
-        	<ul class="PrimaryNav--links">
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Status</a></li>
-        	</ul>
+            <ul class="PrimaryNav-linkslist">
+                <li class="primaryNav-links"><a href="#">Sign Up</a></li>
+                <li class="primaryNav-links"><a href="#">Log In</a></li>
+                <li class="primaryNav-links"><a href="#">Status</a></li>
+            </ul>
 
             <div class="navSearchbar clearfix">
-            	<form id="tfnewsearch" method="get" action="#">
-                	<input type="submit" value=">" class="tfbutton2">
-                	<input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"> 
+                <form id="tfnewsearch" method="get" action="#">
+                    <input type="submit" value=">" class="tfbutton2">
+                    <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"> 
                 </form>
             </div>
 
@@ -34,81 +36,175 @@
 
     <div class="navigation secondaryNav">
         <div class="wrapper">
-            <ul class="secondaryNav--links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Impact</a></li>
-                <li><a href="#">Use Cases</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="secondaryNav-linkslist">
+                <li class="secondaryNav-links"><a href="#">About</a></li>
+                <li class="secondaryNav-links"><a href="#">Impact</a></li>
+                <li class="secondaryNav-links"><a href="#">Use Cases</a></li>
+                <li class="secondaryNav-links"><a href="#">Staff</a></li>
+                <li class="secondaryNav-links"><a href="#">Contact</a></li>
             </ul>
         </div>
     </div>
 
-    <!--BANNER SECTION -->
-    <div class="Banner clearfix">
-        <div class="wrapper">
-            <div class="Banner-mainContent">
-                <h2 class="Banner-missionStatement">
-                    "Transforming Science through Data-driven Discovery"
-                </h2>
-                 <p class="aboutText-Banner">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                 </p>
-                <div class="learnMore-Banner">
-                    Learn More
-                </div>
-                <div class="buttonBanner productsButton">
-                    Products
-                </div>
-                <div class="buttonBanner tutorialsButton">
-                    Tutorials 
-                </div>
+<!--BANNER SECTION -->
+
+<div class="Banner-wrapper clearfix">
+         <div class="Banner-mainContent wrapper">
+            <h2 class="Banner-missionStatement">"Transforming Science through Data-driven Discovery"</h2>
+                 <p class="aboutText-Banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="learnMore-Banner">
+            Learn More
             </div>
-        </div>
+        <div class="buttonBanner productsButton">Products</div>
+        <div class="buttonBanner tutorialsButton">Tutorials </div>
     </div>
+</div>
 
-    <!--PRODUCT SECTION -->
-    <div class="productSection wrapper clearfix">
-        <div class="wrapper clearfix">
-            <h2>
-                OUR PRODUCTS
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+<!--PRODUCT SECTION -->
 
-            <!--ATMOSPHERE -->
-            <div class="productCard productCard-atmosphere clearfix">
-                <div class="productCard--icon">
-                    <img src="images/icons/Atmosphere_blue.png" class="iconAtmos iconProduct">
-                </div>
+<div class="productSection wrapper clearfix">
+    <div class="ourProducts-wrapper clearfix"
+        <h2>OUR PRODUCTS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+            <div class="productCards--wrapper">
+
+<!--ATMOSPHERE -->
+
+             <div class="productCard productCard-atmosphere clearfix">
+                <div class="productCard--icon"><img src="images/icons/Atmosphere_blue.png" class="iconAtmos iconProduct"></div>
                 <div class="productCard-content clearfix">
-                    <h3 class="productCard--title title-Atmosphere">
-                        ATMOSPHERE
-                    </h3>
-                    <p class="productCard--description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-                <div class="buttonWrapper clearfix">
-                    <div class=" homePage-button--blue launchButton">
-                        LAUNCH
+                    <h3 class="productCard--title title-Atmosphere">ATMOSPHERE</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class=" homePage-button--blue learnMore">
-                        Learn More
-                    </div>
-                </div>
+                        <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div></div>
             </div>
 
+<!--DNA SUBWAY -->
+
+            <div class="productCard productCard-dnasubway clearfix">
+                <div class="productCard--icon"><img src="images/icons/dnasubway_Blue.png" class="iconDna iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title title-Dnasubway">DNA Subway</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                        <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div></div>
+            </div>
+
+<!--Discovery Environment -->
+
+            <div class="productCard productCard-discovery clearfix">
+                <div class="productCard--icon"><img src="images/icons/Discovery_blue.png" class="iconDiscovery iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title title-Discovery">Discovery Environment</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                        <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div></div>
+            </div>
+
+<!--Science APIs -->
+
+            <div class="productCard productCard-ScienceApi clearfix">
+                <div class="productCard--icon"><img src="images/icons/ScienceAPIs_Blue.png" class="iconScienceAPI iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title title-ScienceApi">Science APIs</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                        <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div></div>
+            </div>
+
+<!--Learning Center -->
+
+            <div class="productCard productCard-learningCenter">
+                <div class="productCard--icon"><img src="images/icons/Learningcenter_Blue.png" class="iconScienceAPI iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title">LEARNING CENTER</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div>
+                    </div>
+                </div>
+
+<!--Data Store -->
+
+            <div class="productCard productCard-dataStore">
+                <div class="productCard--icon icon-Datastore"><img src="images/icons/Datastore_Blue.png" class="iconDatastore iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title title-Datastore">DATA   STORE</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div>
+                    </div>
+            </div>
+
+<!--Powered by CyVerse -->
+
+            <div class="productCard productCard-poweredCyverse">
+                <div class="productCard--icon"><img src="images/icons/poweredcyverse.png" class="iconScienceAPI iconProduct"></div>
+                    <div class="productCard-content clearfix">
+                    <h3 class="productCard--title">POWERED BY   CYVERSE</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div> 
+                    </div>
+                </div>
+
+<!--BisQue Image Analysis -->
+
+            <div class="productCard productCard-bisqueImage">
+                <div class="productCard--icon"><img src="images/icons/bisQue_blue.png" class="iconScienceAPI iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title">BISQUE IMAGE ANALYSIS</h3>
+                        <p class="productCard--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="buttonWrapper clearfix">
+                        <div class=" homePage-button--blue launchButton">LAUNCH</div>
+                        <div class=" homePage-button--blue learnMore">Learn More</div>
+                    </div>
+            </div>
         </div>
-    </div>
 
-                            <!--Tabbed Menu-->
+<!--Tabbed Menu-->
 
-    <div class="menuTabbed--wrapper clearfix"> 
-    </div>
-    <div class="menuLinks--wrapper">
-    </div>
-    <div class="menuConnect--wrapper clearfix"> 
-    </div>
+                <div class="menuTabbed-wrapper clearfix wrapper"> 
+        </div>
+        <div class="menuLinks-wrapper wrapper clearfix"></div>
+
+        <div class="informationalLinks-wrapper wrapper clearfix">
+            <div class="referenceLinks-leftColumn">
+            <h3 class="referenceLinks"> New to CyVerse? </h3>
+                <a href="#" class="referenceLink blueLink"> Students </a>
+                <a href="#" class="referenceLink blueLink"> New Users </a>
+                <a href="#" class="referenceLink blueLink"> Educators </a>
+                <a href="#" class="referenceLink blueLink"> Researchers </a>
+                <a href="#" class="referenceLink blueLink"> Developers </a>
+                <a href="#" class="referenceLink blueLink"> Advisors </a>
+            </div>
+            <div class="referenceLinks-rightColumn">
+                <h3 class="referenceLinks"> Resources </h3>
+                <a href="#" class="referenceLink blueLink"> Products </a>
+                <a href="#" class="referenceLink blueLink"> FAQ </a>
+                <a href="#" class="referenceLink blueLink"> Learning Center </a>
+                <a href="#" class="referenceLink blueLink"> CyVerse Wiki </a>
+                <a href="#" class="referenceLink blueLink"> Tutorials </a>
+                <a href="#" class="referenceLink blueLink"> Policies </a>
+            </div>
+        </div>
+<!-- REFERENCE LINKS-->
+        <div class="menuConnect-wrapper wrapper clearfix"> 
+        </div>
 </body>
