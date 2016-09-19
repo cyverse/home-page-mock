@@ -6,9 +6,11 @@
      clear: both;
      height: 0;
      }
-.clearfix { display: inline-block; }
+.clearfix {
+     display: inline-block; }
 /* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
+* html .clearfix { 
+    height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
 
@@ -23,7 +25,7 @@ body {
 .primaryNav {
     background-color: #fff;
     display: flex;
-        box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 1px 5px grey;
 
 }
 
@@ -84,7 +86,7 @@ a {
     padding:10px;
 }
 
-.PrimaryNav a:hover {
+.primaryNav-links a:hover {
     color: skyblue;
     border: solid 2px skyblue;
 }
@@ -95,16 +97,18 @@ a {
 
 .Banner {
     width: 100%;
-    background-image: url(img2.jpg);
+    background-image: url(testbanner2.jpg);
     background-repeat:no-repeat;
     background-color: #a4a5a5;
+    background-size: 275%;
+    background-origin: 
 }
 
 .Banner-mainContent {
     max-width: 400px;
     min-height: 200px;
     float: right;
-    background-color:grey;
+    background-color:rgba(50,50,50,.75);
 }
 .Banner-missionStatement{
     font-family: arial;
@@ -123,16 +127,24 @@ a {
 }
 
 
-.learnMore-Banner {
+.learnMore {
     font-family: Verdana, sans-serif;
-    text-decoration: underline;
     font-size: 12px;
-    color: #fff;
     margin-bottom: 10px;
     text-align: right;
     padding-right: 10px;
 }
 
+.learnMore-button:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.learnMore-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
 .buttonBanner {
     font-family: Verdana, sans-serif;
     width: 49%;
@@ -145,6 +157,11 @@ a {
     display: inline-block;
     padding: 3px;
     margin-bottom: 10px;
+}
+
+.buttonBanner:hover{
+    color: #fff;
+    background-color: #0971ab;
 }
 
 .productSection {
@@ -180,8 +197,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin: 10px;
     display: inline-block;
 }
-
-
 
 .iconProduct {
     width:100%;
@@ -237,9 +252,8 @@ margin-bottom: 10px;
 
 .homePage-button--blue {
     background-color: #0971ab;
-    border: none;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -247,7 +261,15 @@ margin-bottom: 10px;
     border-radius: 3px;
     width: 100px;
     display: inline-block;
+       border:solid 2px #0971ab;
 }
+
+.homePage-button--blue:hover{
+    color:#0971ab;
+    background-color: #fff;
+    border:solid 2px #0971ab;
+}
+
 
 #tfnewsearch {
     right: 0px;
@@ -342,6 +364,10 @@ padding-top:10px;
     padding:10px;
 }
 
+.referenceLink:hover {
+    text-decoration: underline;
+}
+
 /* Connect with Us */
 
 .menuConnect-wrapper {
@@ -398,15 +424,29 @@ position: relative;
 margin: 0 auto;
 right:0px;
 left: 0px;
-width: 100%;
+width: 51%;
 }
 
 .footerLinks {
     text-decoration: none;
     color: #fff;
+    padding: 10px;
+}
+
+.footerLinks:hover {
+    color:lightblue;
+}
+
+.footerLogo {
+    width:25 px;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 800px) {
+
+    .Banner {
+    background-size: 255%;
+}
 
     .Banner-wrapper, .Banner-mainContent {
         width:100%;
@@ -414,26 +454,34 @@ width: 100%;
         margin-right: 0px;
     }
 
-.informationalLinks-wrapper, .menuConnect-wrapper {
+    .footerLinks-wrapper {
+        width: 76%;
+        }
 
-width: 100%;
-display: block;
-margin: 0 auto;
-}
+    .informationalLinks-wrapper, .menuConnect-wrapper {
+
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        }   
     
     #tfnewsearch {
         display: none;
-    }
+        }   
     .secondaryNav {
         display: none;
-    }
-    
-    li {
-    width
-    }
-        .productCard {
-    width: 100%;
-            margin: auto;
-            margin-bottom: 1%;
-    }
+        }
+
+    .productCard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1%;
+        }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .footerLinks-wrapper {
+        width: 100%;
+        }
 }
