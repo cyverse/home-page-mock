@@ -1,3 +1,10 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Fonts/Roboto regular.tff'); /* IE9 Compat Modes */
+  src: url('Fonts/Roboto regular.tff') format('truetype'), /* IE6-IE8 */
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -27,6 +34,13 @@ body {
     display: flex;
     box-shadow: 1px 1px 5px grey;
 
+}
+
+.primaryNav {
+    }
+
+.secondaryNav {
+    
 }
 
 .logoHeader {
@@ -111,19 +125,21 @@ a {
     background-color:rgba(50,50,50,.75);
 }
 .Banner-missionStatement{
-    font-family: arial;
+    font-family: 'Roboto';
     width: 100%;
     margin: auto;
     text-align: center;
     color: #fff;
     padding: 2%;
+    font-weight: normal;
 }
 
 .aboutText-Banner {
-    font-family: verdana;
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
     color: #fff;
     margin: auto;
     padding: 10px;
+    line-height: 25px;
 }
 
 
@@ -146,7 +162,7 @@ a {
     padding: 10px;
 }
 .buttonBanner {
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto', Verdana, sans-serif;
     width: 49%;
     text-align: center;
     color: #000;
@@ -215,8 +231,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard--title {
-    font-family: verdana, helvetica, sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+    font-size: 16;
     padding: 10px;
     display:block;
     max-width: 100%;
@@ -224,8 +240,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard--description {
-font-family: verdana, helvetica, sans-serif;
-font-size: 12px;
+font-family: 'Roboto', verdana, helvetica, sans-serif;
+font-size: 14px;
 padding: 5px;
 margin:0 auto;
 margin-bottom: 10px;
@@ -257,7 +273,7 @@ margin-bottom: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
     border-radius: 3px;
     width: 100px;
     display: inline-block;
@@ -272,11 +288,9 @@ margin-bottom: 10px;
 
 
 #tfnewsearch {
-    right: 0px;
-    position: relative;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 15%;
+
+    float:right;
+    padding: 5px;
 }
 
 .tftextinput2 {
@@ -294,7 +308,7 @@ margin-bottom: 10px;
 .tfbutton2 {
     margin: 0;
     padding: 5px;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
     outline: none;
@@ -326,12 +340,6 @@ margin-bottom: 10px;
 
     /* TABBED MENU */
 
-.menuTabbed-wrapper {
-    background-color: pink;
-    min-height: 500px;
-    box-shadow: 1px 1px 5px grey;
-    margin-bottom: 10px;
-}
 
 /* Explore CyVerse */
 
@@ -352,10 +360,6 @@ padding-top:10px;
 .referenceLinks-leftColumn, .referenceLinks-rightColumn {
     width:49%;
     display: inline-block;
-}
-
-.referenceLinks-leftColumn {
-    border-right: solid 1px grey;
 }
 
 .referenceLink {
@@ -409,7 +413,7 @@ padding-top:10px;
 .socialmediaText {
     margin: 0 auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 10px;
 }
 .footer-wrapper {
     color:#fff;
@@ -438,14 +442,14 @@ width: 51%;
 }
 
 .footerLogo {
-    width:25 px;
+    width:20px;
     margin-right: 5px;
 }
 
 @media only screen and (max-width: 800px) {
 
     .Banner {
-    background-size: 255%;
+    background-size: 367%;
 }
 
     .Banner-wrapper, .Banner-mainContent {
