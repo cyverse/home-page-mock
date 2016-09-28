@@ -1,8 +1,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Fonts/Roboto regular.tff'); /* IE9 Compat Modes */
-  src: url('Fonts/Roboto regular.tff') format('truetype'), /* IE6-IE8 */
+  src: url('robotoregular.tff'); /* IE9 Compat Modes */
+  src: url('robotoregular.tff') format('truetype'), /* IE6-IE8 */
 }
 
 .clearfix:after {
@@ -340,6 +340,10 @@ margin-bottom: 10px;
 
     /* TABBED MENU */
 
+    .menuTabbed-wrapper {
+        padding: 0px;
+    }
+
 
 /* Explore CyVerse */
 
@@ -381,6 +385,7 @@ padding-top:10px;
     min-height: 325px;
     float: left;
     padding: 15px;
+    padding: 10 px;
 }
 
 .socialmedia-section {

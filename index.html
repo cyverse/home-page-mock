@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tabstyle.css">
     <link rel="stylesheet" href="normalize.css">
-    <!-- <script src="menutab.js"></script> -->
+   <script src="menutab.js"></script>
     <title>
         CyVerse
     </title>
@@ -339,7 +340,234 @@
 <!--Tabbed Menu-->
 
         <div class="menuTabbed-wrapper clearfix wrapper"> 
-           
+            <ul class="tabList">
+              <li class="tabSection newsSection">
+                <a href="#" class="tabLinks" onclick="openTab(event, 'News')">
+                    News
+                </a>
+            </li >
+              <li class="tabSection eventsSection">
+                <a href="#" class="tabLinks" onclick="openTab(event, 'Events')">
+                    Events
+                </a>
+            </li>
+              <li class="tabSection updatesSection">
+                <a href="#" class="tabLinks" onclick="openTab(event, 'Updates')">
+                    Updates
+                </a>
+            </li>
+            </ul>
+
+            <div id="News" class="tabContent newsContent">
+              <h3 class="tabTitle">
+                News
+            </h3>
+<!-- NEWS ITEM 1 -->
+              <div class="newsItem">
+                <h4 class="newsName"> 
+                    <a href="#" class="newsLink">
+                        News Title
+                    </a>
+                </h4>
+                <p class="eventDescription">
+                    News Description.
+                </p>
+                <p class="eventDate">
+                    Dates
+                </p>
+            </div>
+<!-- NEWS ITEM 2 -->
+                <div class="newsItem">
+                <h4 class="newsName"> 
+                    <a href="#" class="newsLink">
+                        News Title
+                    </a>
+                </h4>
+                <p class="eventDescription">
+                    News Description.
+                </p>
+                <p class="eventDate">
+                    Dates
+                </p>
+            </div>
+<!-- NEWS ITEM 3 -->
+                <div class="newsItem">
+                <h4 class="newsName"> 
+                    <a href="#" class="newsLink">
+                        News Title
+                    </a>
+                </h4>
+                <p class="eventDescription">
+                    News Description.
+                </p>
+                <p class="eventDate">
+                    Dates
+                </p>
+            </div>
+            </div>
+
+            <div id="Events" class="tabContent eventsContent">
+                  <h3 class="tabTitle">
+                    Events
+                </h3>
+    <!-- EVENT ITEM 1 -->
+                  <div class="eventItem">
+                    <h4 class="eventName"> 
+                        <a href="#" class="eventLink">
+                            Event Workshop Title
+                        </a>
+                    </h4>
+                    <p class="eventDescription">
+                        Event Description that goes through what the workshop or training covers. 
+                    </p>
+                    <p class="eventLocation">
+                        city, State
+                    </p>
+                    <p class="eventDate">
+                        Dates
+                    </p>
+                </div>
+    <!-- EVENT ITEM 2 -->
+                 <div class="eventItem">
+                    <h4 class="eventName"> 
+                        <a href="#" class="eventLink">
+                            Event Workshop Title
+                        </a>
+                    </h4>
+                    <p class="eventDescription">
+                        Event Description that goes through what the workshop or training covers. 
+                    </p>
+                    <p class="eventLocation">
+                        city, State
+                    </p>
+                    <p class="eventDate">
+                        Dates
+                    </p>
+                </div>
+    <!-- EVENT ITEM 3 -->
+                 <div class="eventItem">
+                    <h4 class="eventName"> 
+                        <a href="#" class="eventLink">
+                            Event Workshop Title
+                        </a>
+                    </h4>
+                    <p class="eventDescription">
+                        Event Description that goes through what the workshop or training covers. 
+                    </p>
+                    <p class="eventLocation">
+                        city, State
+                    </p>
+                    <p class="eventDate">
+                        Dates
+                    </p>
+                </div>
+            </div>
+
+            <div id="Updates" class="tabContent updatesContent">
+                 <h3 class="tabTitle">
+                    Updates
+                </h3>
+    <!-- UPDATE ITEM 1 -->
+                  <div class="updateItem">
+                    <h4 class="updateName"> 
+                        <a href="#" class="updateLink">
+                            Update Title
+                        </a>
+                    </h4>
+                    <p class="updateDescription">
+                        Description. 
+                    </p>
+                    <p class="updatedServices">
+                        List of affected services
+                    </p>
+                    <p class="updateDate">
+                        Dates
+                    </p>
+                </div>
+    <!-- UPDATE ITEM 2 -->
+                  <div class="updateItem">
+                    <h4 class="updateName"> 
+                        <a href="#" class="updateLink">
+                            Update Title
+                        </a>
+                    </h4>
+                    <p class="updateDescription">
+                        Description. 
+                    </p>
+                    <p class="updatedServices">
+                        List of affected services
+                    </p>
+                    <p class="updateDate">
+                        Dates
+                    </p>
+                </div>
+    <!-- UPDATE ITEM 3 -->
+                  <div class="updateItem">
+                    <h4 class="updateName"> 
+                        <a href="#" class="updateLink">
+                            Update Title
+                        </a>
+                    </h4>
+                    <p class="updateDescription">
+                        Description. 
+                    </p>
+                    <p class="updatedServices">
+                        List of affected services
+                    </p>
+                    <p class="updateDate">
+                        Dates
+                    </p>
+                </div>
+</div>
+<!-- EXPLORE CYVERSE -->    
+
+    <div class="informationalLinks-wrapper wrapper clearfix">
+            <div class="referenceLinks-leftColumn">
+            <h3 class="referenceLinks">
+                New to CyVerse?
+            </h3>
+                <a href="#" class="referenceLink blueLink">
+                    Students
+                </a>
+                <a href="#" class="referenceLink blueLink">
+                    New Users
+                </a>
+                <a href="#" class="referenceLink blueLink">
+                    Educators
+                </a>
+                <a href="#" class="referenceLink blueLink">
+                    Researchers
+                </a>
+                <a href="#" class="referenceLink blueLink"> 
+                    Developers 
+                </a>
+                <a href="#" class="referenceLink blueLink"> 
+                    Advisors
+                </a>
+            </div>
+            <div class="referenceLinks-rightColumn">
+                <h3 class="referenceLinks">
+                    Resources
+                </h3>
+                    <a href="#" class="referenceLink blueLink">
+                        Products
+                    </a>
+                    <a href="#" class="referenceLink blueLink">
+                        FAQ
+                    </a>
+                    <a href="#" class="referenceLink blueLink">
+                        Learning Center 
+                    </a>
+                    <a href="#" class="referenceLink blueLink">
+                        CyVerse Wiki
+                    </a>
+                    <a href="#" class="referenceLink blueLink">
+                        Tutorials
+                    </a>
+                    <a href="#" class="referenceLink blueLink">
+                        Policies
+                    </a>
+            </div>
         </div>
 
 <!-- REFERENCE LINKS-->
