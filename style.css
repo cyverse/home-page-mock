@@ -76,6 +76,9 @@ body {
     font-size: 14px;
 }
 
+.secondaryNav-linksList {
+    padding: 0;
+}
 
 a {
     text-decoration: none;
@@ -162,17 +165,15 @@ a {
     padding: 10px;
 }
 .buttonBanner {
-    font-family: 'Roboto', Verdana, sans-serif;
-    width: 49%;
+font-family: 'Roboto', Verdana, sans-serif;
+    width: 48%;
     text-align: center;
     color: #000;
     background-color: #fff;
     border-radius: 3px;
-    clear: both;
-    position: relative;
     display: inline-block;
-    padding: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 3px;
 }
 
 .buttonBanner:hover{
@@ -180,10 +181,8 @@ a {
     background-color: #0971ab;
 }
 
-.productSection {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
+.buttongGroup-banner {
+    padding: 5px;
 }
 
 .ourProducts-wrapper {
@@ -192,10 +191,11 @@ a {
 }
 
 .productCard {
+    position: relative;
     width: 100%;
-    min-height: 150px;
     margin: auto;
     margin-bottom: 1%;
+    padding-bottom: 35px;
     box-shadow: 1px 1px 5px grey;
 background: rgba(255,255,255,1);
 background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
@@ -208,7 +208,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard--icon {
-    min-height: 35px;
     width: 85px;
     margin: 10px;
     display: inline-block;
@@ -216,15 +215,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .iconProduct {
     width:100%;
-    max-width: 85px;
+    max-width: 64px;
+    position: absolute;
+    top:20px;
+    left:20px;
 }
 
 .iconDatastore {
-    width:75%;
+    width:45px;
+    left:25px;
 }
 
 .productCard-content {
-       width: 88%;
+       width: 48%;
     display: inline-block;
     margin: 0 auto;
     position: relative;
@@ -261,15 +264,15 @@ margin-bottom: 10px;
 .title-Discoveryenvironment {
 }
 
-.buttonWrapper {
-    padding:10px;
-    display: inline-block;
+.buttonGroup {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
-.homePage-button--blue {
+.button-blue {
     background-color: #0971ab;
     color: white;
-    padding: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -277,10 +280,11 @@ margin-bottom: 10px;
     border-radius: 3px;
     width: 100px;
     display: inline-block;
-       border:solid 2px #0971ab;
+    border:solid 2px #0971ab;
+    padding: 5px;
 }
 
-.homePage-button--blue:hover{
+.button-blue:hover{
     color:#0971ab;
     background-color: #fff;
     border:solid 2px #0971ab;

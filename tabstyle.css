@@ -38,7 +38,7 @@
     text-decoration: underline;
 }
 
-.tabList .newsSection a:focus, .active {
+.tabList .newsSection a:focus .active {
     background-color: #0971ab;
     color: #fff;
 }
@@ -47,7 +47,7 @@
     background-color: #004F76;
 }
 
-.tabList .eventsSection a:focus, .active {
+.tabList .eventsSection a:focus .active {
     background-color: #624D9C;
     color: #fff;
 }
@@ -56,7 +56,7 @@
     background-color: #463B72;
 }
 
-.tabList .updatesSection a:focus, .active {
+.tabList .updatesSection a:focus .active {
     background-color: #83BC46;
     color: #fff;
 }
@@ -86,10 +86,20 @@
     border-top: none;
 }
 
+.newsContent.tabContent {
+    display: block;
+}
+
 .eventItem, .newsItem, .updateItem {
     background-color: #fff;
     color: #000;
     border-radius: 5px;
     padding:6px;
     margin-bottom: 1%;
+}
+
+/* NEWS ITEM IMAGES*/
+
+.newsItem-one {
+    background-image: 
 }
