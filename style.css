@@ -1,3 +1,10 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('robotoregular.tff'); /* IE9 Compat Modes */
+  src: url('robotoregular.tff') format('truetype'), /* IE6-IE8 */
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -6,9 +13,11 @@
      clear: both;
      height: 0;
      }
-.clearfix { display: inline-block; }
+.clearfix {
+     display: inline-block; }
 /* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
+* html .clearfix { 
+    height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
 
@@ -23,8 +32,15 @@ body {
 .primaryNav {
     background-color: #fff;
     display: flex;
-        box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 1px 5px grey;
 
+}
+
+.primaryNav {
+    }
+
+.secondaryNav {
+    
 }
 
 .logoHeader {
@@ -51,17 +67,16 @@ body {
     margin:5px;
 }
 
-ul, li {
+.secondaryNav-links {
     list-style: none;
     float: left;
     padding: 10px;
-    text-transform: uppercase;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.secondaryNav li {
-    font-size: 14px;
+.secondaryNav-linksList {
+    padding: 0;
 }
 
 a {
@@ -76,7 +91,17 @@ a {
     padding: 5px;
 }
 
-.primaryNav a:hover {
+.PrimaryNav-linkslist {
+    list-style: none;
+}
+
+.primaryNav-links {
+    float: left;
+    font-size: 15px;
+    padding:10px;
+}
+
+.primaryNav-links a:hover {
     color: skyblue;
     border: solid 2px skyblue;
 }
@@ -87,60 +112,65 @@ a {
 
 .Banner {
     width: 100%;
-    background-color:black;
+    background-image: url(watercolor2.png);
+    background-repeat:no-repeat;
+    background-color: #a4a5a5;
+    background-size: 100%;
+    background-origin: 
 }
 
 .Banner-mainContent {
     max-width: 400px;
     min-height: 200px;
     float: right;
-    background-color:grey;
+    background-color:rgba(50,50,50,.75);
 }
 .Banner-missionStatement{
-    font-family: arial;
+    font-family: 'Roboto';
     width: 100%;
     margin: auto;
     text-align: center;
     color: #fff;
     padding: 2%;
+    font-weight: normal;
 }
 
 .aboutText-Banner {
-    font-family: verdana;
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
     color: #fff;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
+    line-height: 25px;
 }
 
 
-.learnMore-Banner {
+.learnMore {
     font-family: Verdana, sans-serif;
-    text-decoration: underline;
     font-size: 12px;
-    color: #fff;
     margin-bottom: 10px;
     text-align: right;
     padding-right: 10px;
 }
 
 .buttonBanner {
-    font-family: Verdana, sans-serif;
-    width: 49%;
+    font-family: 'Roboto', Verdana, sans-serif;
+    width: 48%;
     text-align: center;
     color: #000;
     background-color: #fff;
     border-radius: 3px;
-    clear: both;
-    position: relative;
     display: inline-block;
-    padding: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 3px;
 }
 
-.productSection {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
+.buttonBanner:hover{
+    color: #fff;
+    background-color: #0971ab;
+}
+
+.buttongGroup-banner {
+    padding: 5px;
 }
 
 .ourProducts-wrapper {
@@ -149,10 +179,11 @@ a {
 }
 
 .productCard {
+    position: relative;
     width: 100%;
-    min-height: 150px;
     margin: auto;
     margin-bottom: 1%;
+    padding-bottom: 35px;
     box-shadow: 1px 1px 5px grey;
 background: rgba(255,255,255,1);
 background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
@@ -165,33 +196,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard--icon {
-    min-height: 35px;
     width: 85px;
     margin: 10px;
     display: inline-block;
 }
 
-
-
 .iconProduct {
     width:100%;
-    max-width: 85px;
+    max-width: 64px;
+    position: absolute;
+    top:20px;
+    left:20px;
 }
 
 .iconDatastore {
-    width:75%;
+    width:45px;
+    left:25px;
+}
+
+.iconDataCommons {
+    width: 75px;
+    left: 9px;
+    top: 10px;
+
 }
 
 .productCard-content {
-       width: 88%;
+       width: 48%;
     display: inline-block;
     margin: 0 auto;
     position: relative;
 }
 
 .productCard--title {
-    font-family: verdana, helvetica, sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+    font-size: 16;
     padding: 10px;
     display:block;
     max-width: 100%;
@@ -199,8 +238,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .productCard--description {
-font-family: verdana, helvetica, sans-serif;
-font-size: 12px;
+font-family: 'Roboto', verdana, helvetica, sans-serif;
+font-size: 14px;
 padding: 5px;
 margin:0 auto;
 margin-bottom: 10px;
@@ -220,31 +259,37 @@ margin-bottom: 10px;
 .title-Discoveryenvironment {
 }
 
-.buttonWrapper {
-    padding:10px;
-    display: inline-block;
+.buttonGroup {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
-.homePage-button--blue {
+.button-blue {
     background-color: #0971ab;
-    border: none;
     color: white;
-    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
     border-radius: 3px;
     width: 100px;
     display: inline-block;
+    border:solid 2px #0971ab;
+    padding: 5px;
 }
 
+.button-blue:hover{
+    color:#0971ab;
+    background-color: #fff;
+    border:solid 2px #0971ab;
+}
+
+
 #tfnewsearch {
-    right: 0px;
-    position: relative;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 15%;
+
+    float:right;
+    padding: 5px;
 }
 
 .tftextinput2 {
@@ -262,7 +307,7 @@ margin-bottom: 10px;
 .tfbutton2 {
     margin: 0;
     padding: 5px;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
     outline: none;
@@ -294,21 +339,83 @@ margin-bottom: 10px;
 
     /* TABBED MENU */
 
-.menuTabbed-wrapper {
-    background-color: pink;
-    min-height: 500px;
-    box-shadow: 1px 1px 5px grey;
-    margin-bottom: 10px;
-}
+    .menuTabbed-wrapper {
+        padding: 0px;
+    }
+
+    .newsName {
+        margin: 0px;
+    }
+
+    .small-Link {
+        font-size: 12pt;
+    }
+
+    .newsLink {
+        font-size:18px;
+    }
+
+    .small-Link:hover, .newsLink:hover {
+        text-decoration: underline;
+
+    }
+
+    .whiteLink {
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .whiteLink:hover {
+        text-decoration: underline;
+    }
+
+    .newsAll-link {
+        float:left;
+    }
+
+    .subscribeLink {
+        float:right;
+        position: relative;
+    }
+
+    .subscribeLink img {
+        position: absolute;
+        top:-1px;
+        right:68px;
+    }
+
+    /* NEWS ITEM IMAGES */
+
+    .newsBackground {
+        background-color: rgba(255,255,255,.8);
+        padding: 5px;
+        display: inline-block;
+        border-radius: 5px;
+        width: 55%;
+    }
+
+    .newsItem-three {
+        background-image: url(newsimage2.jpg);
+    }
+
+    .newsItem-two {
+        background-image: url(newsimage3.jpg);
+    }
+
+    .newsItem-one {
+        background-image: url(newsimage1.jpg);
+    }
+
 
 /* Explore CyVerse */
 
 .informationalLinks-wrapper {
 
-    background-color: lightgreen;
+    background-color: #fff;
     box-shadow: 1px 1px 5px grey;
     margin-bottom: 10px;
-    min-height: 300px;
+    min-height: 325px;
     width: 50%;
     float: left;
 }
@@ -322,47 +429,135 @@ padding-top:10px;
     display: inline-block;
 }
 
-.referenceLinks-leftColumn {
-    border-right: solid 1px grey;
-}
-
 .referenceLink {
     float: left;
     clear: both;
     padding:10px;
 }
 
+.referenceLink:hover {
+    text-decoration: underline;
+}
+
 /* Connect with Us */
 
 .menuConnect-wrapper {
-    background-color: skyblue;
+    background-color: #ffffff;
     box-shadow: 1px 1px 5px grey;
     width: 50%;
-    min-height: 300px;
+    min-height: 325px;
     float: left;
+    padding: 15px;
+    padding: 10 px;
 }
 
-@media only screen and (max-width: 500px) {
+.socialmedia-section {
+    text-align: center;
+}
+
+.socialmediaIcons {
+    display: inline-block;
+    padding: 20px;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.youtube {
+    height:50px;
+    width: 70px;
+}
+
+.github {
+    height: 60px;
+    width: 60px;
+}
+
+
+.socialmediaText {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+}
+.footer-wrapper {
+    color:#fff;
+    background-color: #003451;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.footerLinks-wrapper {
+
+position: relative;
+margin: 0 auto;
+right:0px;
+left: 0px;
+width: 51%;
+}
+
+.footerLinks {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.footerLinks:hover {
+    color:lightblue;
+}
+
+.footerLogo {
+    width:20px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .Banner {
+    background-size: 367%;
+}
 
     .Banner-wrapper, .Banner-mainContent {
         width:100%;
         max-width: 100%;
         margin-right: 0px;
     }
+
+    .footerLinks-wrapper {
+        width: 76%;
+        }
+
+    .informationalLinks-wrapper, .menuConnect-wrapper {
+
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        }   
     
     #tfnewsearch {
         display: none;
-    }
+        }   
     .secondaryNav {
         display: none;
+        }
+
+    .productCard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1%;
+        }
+
+      .newsBackground {
+        width: 100%;
     }
-    
-    li {
-    width
-    }
-        .productCard {
-    width: 100%;
-            margin: auto;
-            margin-bottom: 1%;
-    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .footerLinks-wrapper {
+        width: 100%;
+        }
 }

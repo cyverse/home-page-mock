@@ -1,0 +1,105 @@
+/* Style the list */
+.tabList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+.tabList .tabSection {
+    float: left;
+}
+
+/* Style the links inside the list items */
+.tabList .tabSection a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.newsSection {
+    background-color: #0971ab;
+}
+
+.eventsSection {
+    background-color: #624D9C;
+}
+
+.updatesSection {
+    background-color: #83BC46;
+}
+/* Change background color of links on hover */
+.tabList .tabSection a:hover {
+    text-decoration: underline;
+}
+
+.tabList .newsSection a:focus .active {
+    background-color: #0971ab;
+    color: #fff;
+}
+
+.tabList .newsSection a:hover{
+    background-color: #004F76;
+}
+
+.tabList .eventsSection a:focus .active {
+    background-color: #624D9C;
+    color: #fff;
+}
+
+.tabList .eventsSection a:hover {
+    background-color: #463B72;
+}
+
+.tabList .updatesSection a:focus .active {
+    background-color: #83BC46;
+    color: #fff;
+}
+
+.tabList .updatesSection a:hover{
+    background-color: #46924E;
+}
+
+.eventsContent {
+    background-color: #624D9C;
+    color:#fff;
+}
+
+.updatesContent {
+    background-color: #83BC46;
+    color:#fff;
+}
+
+.newsContent {
+    background-color: #0971ab;
+    color:#fff;
+}
+/* Style the tab content */
+.tabContent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.newsContent.tabContent {
+    display: block;
+}
+
+.eventItem, .newsItem, .updateItem {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding:6px;
+    margin-bottom: 1%;
+}
+
+/* NEWS ITEM IMAGES*/
+
+.newsItem-one {
+    background-image: 
+}
