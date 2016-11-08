@@ -71,7 +71,6 @@ body {
     list-style: none;
     float: left;
     padding: 10px;
-    text-transform: uppercase;
     font-family: sans-serif;
     font-size: 14px;
 }
@@ -98,7 +97,6 @@ a {
 
 .primaryNav-links {
     float: left;
-    text-transform: uppercase;
     font-size: 15px;
     padding:10px;
 }
@@ -114,10 +112,10 @@ a {
 
 .Banner {
     width: 100%;
-    background-image: url(testbanner2.jpg);
+    background-image: url(watercolor2.png);
     background-repeat:no-repeat;
     background-color: #a4a5a5;
-    background-size: 275%;
+    background-size: 100%;
     background-origin: 
 }
 
@@ -141,7 +139,7 @@ a {
     font-family: 'Roboto', Verdana, Arial, sans-serif;
     color: #fff;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
     line-height: 25px;
 }
 
@@ -154,18 +152,8 @@ a {
     padding-right: 10px;
 }
 
-.learnMore-button:hover {
-    text-decoration: underline;
-    color: #fff;
-}
-
-.learnMore-button {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-}
 .buttonBanner {
-font-family: 'Roboto', Verdana, sans-serif;
+    font-family: 'Roboto', Verdana, sans-serif;
     width: 48%;
     text-align: center;
     color: #000;
@@ -224,6 +212,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .iconDatastore {
     width:45px;
     left:25px;
+}
+
+.iconDataCommons {
+    width: 75px;
+    left: 9px;
+    top: 10px;
+
 }
 
 .productCard-content {
@@ -346,6 +341,70 @@ margin-bottom: 10px;
 
     .menuTabbed-wrapper {
         padding: 0px;
+    }
+
+    .newsName {
+        margin: 0px;
+    }
+
+    .small-Link {
+        font-size: 12pt;
+    }
+
+    .newsLink {
+        font-size:18px;
+    }
+
+    .small-Link:hover, .newsLink:hover {
+        text-decoration: underline;
+
+    }
+
+    .whiteLink {
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .whiteLink:hover {
+        text-decoration: underline;
+    }
+
+    .newsAll-link {
+        float:left;
+    }
+
+    .subscribeLink {
+        float:right;
+        position: relative;
+    }
+
+    .subscribeLink img {
+        position: absolute;
+        top:-1px;
+        right:68px;
+    }
+
+    /* NEWS ITEM IMAGES */
+
+    .newsBackground {
+        background-color: rgba(255,255,255,.8);
+        padding: 5px;
+        display: inline-block;
+        border-radius: 5px;
+        width: 55%;
+    }
+
+    .newsItem-three {
+        background-image: url(newsimage2.jpg);
+    }
+
+    .newsItem-two {
+        background-image: url(newsimage3.jpg);
+    }
+
+    .newsItem-one {
+        background-image: url(newsimage1.jpg);
     }
 
 
@@ -490,6 +549,10 @@ width: 51%;
         margin: auto;
         margin-bottom: 1%;
         }
+
+      .newsBackground {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 620px) {

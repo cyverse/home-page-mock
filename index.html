@@ -15,6 +15,7 @@
 <body> 
 
 <!--DESKTOP NAVIGATION SECTION -->
+
     <div class="navigation clearfix primaryNav">
         <div class="wrapper">
 
@@ -81,12 +82,10 @@
                 "Transforming Science through Data-driven Discovery"
             </h2>
             <p class="aboutText-Banner">
-                CyVerse is funded by the National Science Foundation’s Directorate for Biological Sciences. We are a dynamic virtual organization led by the University of Arizona to fulfill a broad mission that spans our partner institutions: Texas Advanced Computing Center, Cold Spring Harbor Laboratory, and the University of North Carolina at Wilmington. 
-             </br> 
-                Our mission is to design, deploy, and expand a national cyberinfrastructure for life sciences research and train scientists in its use.
+                CyVerse is funded by the National Science Foundation’s Directorate for Biological Sciences. Our mission is to design, deploy, and expand a national cyberinfrastructure for life sciences research and train scientists in its use.
             </p>
                 <div class="learnMore">
-                <a class="learnMore-button" href="#">
+                <a class="whiteLink" href="#">
                     Learn More
                 </a>
                 </div>
@@ -210,24 +209,6 @@
                     </div>
             </div>
 
-<!--Data Store -->
-
-            <div class="productCard productCard-dataStore">
-                <div class="productCard--icon icon-Datastore"><img src="images/icons/Datastore_Blue.png" class="iconDatastore iconProduct"></div>
-                <div class="productCard-content clearfix">
-                    <h3 class="productCard--title title-Datastore">
-                        Data Store
-                    </h3>
-                    <p class="productCard--description">
-                        Store, manage, access, and share all the data related to your research.
-                    </p>
-                    </div>
-                    <div class="buttonGroup clearfix">
-                        <a href="#" class="button-blue">
-                                Learn More
-                        </a>
-                    </div>
-            </div>
 <!--Science APIs -->
 
             <div class="productCard productCard-ScienceApi clearfix">
@@ -249,9 +230,49 @@
                     </div>
             </div>
 
+<!--Data Commons -->
+
+            <div class="productCard productCard-dataCommons productCard-half">
+                <div class="productCard--icon">
+                    <img src="images/icons/DataCommons_Blue.png" class="iconDataCommons iconProduct">
+                </div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title">
+                        Data Commons
+                    </h3>
+                        <p class="productCard--description">
+                            Explore and download data.
+                        </p>
+                    </div>
+                    <div class="buttonGroup clearfix">
+                        <a href="#" class="button-blue">
+                                Learn More
+                            </a>
+                    </div>
+            </div>
+
+<!--Data Store -->
+
+            <div class="productCard productCard-dataStore productCard-half">
+                <div class="productCard--icon icon-Datastore"><img src="images/icons/Datastore_Blue.png" class="iconDatastore iconProduct"></div>
+                <div class="productCard-content clearfix">
+                    <h3 class="productCard--title title-Datastore">
+                        Data Store
+                    </h3>
+                    <p class="productCard--description">
+                        Store, manage, access, and share all the data related to your research.
+                    </p>
+                    </div>
+                    <div class="buttonGroup clearfix">
+                        <a href="#" class="button-blue">
+                                Learn More
+                        </a>
+                    </div>
+            </div>
+
 <!--Learning Center -->
 
-            <div class="productCard productCard-learningCenter">
+            <div class="productCard productCard-learningCenter productCard-half">
                 <div class="productCard--icon">
                     <img src="images/icons/Learningcenter_Blue.png" class="iconScienceAPI iconProduct">
                 </div>
@@ -272,7 +293,7 @@
 
 <!--Powered by CyVerse -->
 
-            <div class="productCard productCard-poweredCyverse">
+            <div class="productCard productCard-poweredCyverse productCard-half">
                 <div class="productCard--icon">
                     <img src="images/icons/poweredcyverse.png" class="iconScienceAPI iconProduct">
                 </div>
@@ -291,6 +312,7 @@
                     </div>
                 </div>
         </div>
+
 <!--Tabbed Menu-->
 
         <div class="menuTabbed-wrapper clearfix wrapper"> 
@@ -314,71 +336,83 @@
 
             <div id="News" class="tabContent newsContent">
               <h3 class="tabTitle">
-                News
+                Featured News
             </h3>
 <!-- NEWS ITEM 1 -->
               <div class="newsItem newsItem-one">
-                <h4 class="newsName"> 
-                    <a href="#" class="newsLink">
-                        News Title
+                <div class="newsBackground clearfix">
+                    <h4 class="newsName"> 
+                        <a href="#" class="newsLink">
+                            Earlham Institute Launches First CyVerse-UK Hub for ‘Big Data’ Analysis
+                        </a>
+                    </h4>
+                    <p class="eventDescription">
+                        The first UK-dedicated HPC cluster for CyVerse provides free, open-source genome analysis
+                    </p>
+
+                    <a href="#" class="small-Link">
+                        Read More
                     </a>
-                </h4>
-                <p class="eventDescription">
-                    News Description.
-                </p>
-                <p class="eventDate">
-                    Dates
-                </p>
+                </div>
             </div>
 <!-- NEWS ITEM 2 -->
                 <div class="newsItem newsItem-two">
-                <h4 class="newsName"> 
-                    <a href="#" class="newsLink">
-                        News Title
-                    </a>
-                </h4>
-                <p class="eventDescription">
-                    News Description.
-                </p>
-                <p class="eventDate">
-                    Dates
-                </p>
+                    <div class="newsBackground clearfix">
+                        <h4 class="newsName"> 
+                            <a href="#" class="newsLink">
+                                Supercomputers could improve cancer diagnostics
+                            </a>
+                        </h4>
+                        <p class="newsDescription">
+                            Supercomputers and immunology are merging to improve cancer diagnostic tests by up to 100 times.
+                        </p>
+                        <a href="#" class="small-Link">
+                            Read More
+                        </a>
+                    </div>
             </div>
 <!-- NEWS ITEM 3 -->
                 <div class="newsItem newsItem-three">
+                    <div class="newsBackground clearfix">
                 <h4 class="newsName"> 
                     <a href="#" class="newsLink">
-                        News Title
+                        Mapping the Human Immune System
                     </a>
                 </h4>
-                <p class="eventDescription">
-                    News Description.
+                <p class="newsDescription">
+                    CyVerse collaborator Adam Buntzman has harnessed supercomputers to map the human immunome.
                 </p>
-                <p class="eventDate">
-                    Dates
-                </p>
+                <a href="#" class="small-Link">
+                    Read More
+                </a>
+            </div>
+            </div>
+            <div class="subscribeBar clearfix wrapper">
+
+                <a href="#" class="newsAll-Link whiteLink"> All News </a>
+                <a href="#" class="subscribeLink whiteLink"> <img src="images/icons/subscribe.png"> Subscribe </a>
             </div>
             </div>
 
             <div id="Events" class="tabContent eventsContent">
                   <h3 class="tabTitle">
-                    Events
+                    Upcoming Events
                 </h3>
     <!-- EVENT ITEM 1 -->
                   <div class="eventItem">
                     <h4 class="eventName"> 
                         <a href="#" class="eventLink">
-                            Event Workshop Title
+                            Cereal Genomics Workshop
                         </a>
                     </h4>
+                     <p class="eventDate">
+                        October 19, 2016  –  October 25, 2016
+                    </p>
                     <p class="eventDescription">
-                        Event Description that goes through what the workshop or training covers. 
+                        This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link">...Read More</a>
                     </p>
                     <p class="eventLocation">
-                        city, State
-                    </p>
-                    <p class="eventDate">
-                        Dates
+                        Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
                     </p>
                 </div>
     <!-- EVENT ITEM 2 -->
@@ -388,14 +422,14 @@
                             Event Workshop Title
                         </a>
                     </h4>
+                    <p class="eventDate">
+                        October 19, 2016  –  October 25, 2016
+                    </p>
                     <p class="eventDescription">
-                        Event Description that goes through what the workshop or training covers. 
+                        This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link">...Read More</a>
                     </p>
                     <p class="eventLocation">
-                        city, State
-                    </p>
-                    <p class="eventDate">
-                        Dates
+                        Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
                     </p>
                 </div>
     <!-- EVENT ITEM 3 -->
@@ -405,21 +439,21 @@
                             Event Workshop Title
                         </a>
                     </h4>
+                    <p class="eventDate">
+                        October 19, 2016  –  October 25, 2016
+                    </p>
                     <p class="eventDescription">
-                        Event Description that goes through what the workshop or training covers. 
+                        This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link">...Read More</a>
                     </p>
                     <p class="eventLocation">
-                        city, State
-                    </p>
-                    <p class="eventDate">
-                        Dates
+                        Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
                     </p>
                 </div>
             </div>
 
             <div id="Updates" class="tabContent updatesContent">
                  <h3 class="tabTitle">
-                    Updates
+                    Recent Tool Updates
                 </h3>
     <!-- UPDATE ITEM 1 -->
                   <div class="updateItem">
