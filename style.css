@@ -4,7 +4,6 @@
   src: url('robotoregular.tff'); /* IE9 Compat Modes */
   src: url('robotoregular.tff') format('truetype'), /* IE6-IE8 */
 }
-
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -26,6 +25,11 @@
 }
 body {
     background-color: #e2e2e2;
+}
+
+
+.navMobile {
+    visibility: hidden;
 }
 
 .secondaryNav,
@@ -247,6 +251,7 @@ margin-bottom: 10px;
 }
 
 .productCard-atmosphere {
+
 }
 
 .productCard-dnaSubway {
@@ -524,6 +529,7 @@ width: 51%;
         width:100%;
         max-width: 100%;
         margin-right: 0px;
+        background-color: #000;
     }
 
     .footerLinks-wrapper {
@@ -553,6 +559,7 @@ width: 51%;
       .newsBackground {
         width: 100%;
     }
+
 }
 
 @media only screen and (max-width: 620px) {
@@ -560,4 +567,32 @@ width: 51%;
     .footerLinks-wrapper {
         width: 100%;
         }
+
+    .PrimaryNav-linkslist {
+
+        display: inline-block;
+
+    }
+
+
+    .navMobile {
+        visibility: visible;
+        background-color:#FFF;
+          width:60px;
+          height:60px;
+          border-radius:100%;
+          background:#0971ab;
+          border:none;
+          outline:none;
+          color:#fff;
+          font-size:36px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+          transition:.3s;  
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          position: fixed;
+          bottom:15px;
+          left:45px;
+          z-index: 1;
+    }
+
 }
