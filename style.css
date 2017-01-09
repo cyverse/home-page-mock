@@ -30,6 +30,7 @@ body {
 
 .navMobile {
     visibility: hidden;
+    display: none;
 }
 
 .secondaryNav,
@@ -562,7 +563,7 @@ width: 51%;
 
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 640px) {
 
     .footerLinks-wrapper {
         width: 100%;
@@ -577,22 +578,47 @@ width: 51%;
 
     .navMobile {
         visibility: visible;
-        background-color:#FFF;
-          width:60px;
-          height:60px;
-          border-radius:100%;
-          background:#0971ab;
-          border:none;
-          outline:none;
-          color:#fff;
-          font-size:36px;
-          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-          transition:.3s;  
-          -webkit-tap-highlight-color: rgba(0,0,0,0);
-          position: fixed;
-          bottom:15px;
-          left:45px;
-          z-index: 1;
+        position: fixed;
+        z-index: 1;
+        display: inline-block;
+        top:790px;
+        right:-20px;
     }
+
+    .notificationButton {
+        background-color:#FFF;
+        width:60px;
+        height:60px;
+        border-radius:100%;
+        border:none;
+        outline:none;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin-right: 9%;
+    }
+
+    .mobileButton {
+    background:#0971ab;
+    bottom:15px;
+    left:45px;
+    float: left;
+}
+
+
+    .mobileNavText {
+        right: -17px;
+        top: -25px;
+        position: relative;
+        color:#fff;
+        font-size:36px;
+    }
+
+    @media only screen and (max-width: 620px) {
+        .navMobile {
+            right: -17px;
+        }
+
+        .notificationButton {
+            margin-right: 4%;
+        }
 
 }
