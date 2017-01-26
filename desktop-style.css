@@ -1,0 +1,538 @@
+    /* UNIVERSAL */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+/* close commented backslash hack */
+
+* {
+    box-sizing: border-box;
+}
+/* UNIVERSAL */
+
+body {
+    background-color: #f7f7f7;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    color: #31363e;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #004471;
+    padding: 5px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.white-link {
+    color: #fff;
+}
+
+.white-link:hover {
+    text-decoration: underline;
+}
+
+.dropshadow {
+    box-shadow: 1px 1px 5px grey;
+}
+
+.blue-button {
+    border: solid 1px #004471;
+    border-radius: 3px;
+    color: #004471;
+    background-color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.blue-button:hover {
+    border: solid 1px #004471;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #004471;
+}
+/*MAINTENANCE ALERT*/
+
+.maintenance-alert {
+    background-color: #f1592b;
+}
+
+.maintenance-text {
+    display: inline-block;
+}
+
+.maintenance-content-wrapper {
+    display: table;
+    margin: auto;
+}
+
+.maintenance-link {
+    display: inline-flex;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 22px;
+}
+/*MOBILE NAVIGATION*/
+
+.nav-mobile {
+    visibility: hidden;
+    display: none;
+}
+/*NAV BAR*/
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.nav-secondary {
+    padding: 0px;
+}
+
+.top-logo {
+    width: 100%;
+    max-width: 550px;
+    display: inline-block;
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+}
+
+.nav-logo {
+    width: 33%;
+    float: left;
+    margin: 5px;
+}
+
+.nav-primary {
+    position: relative
+}
+
+.nav-primary-menu {
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 35px;
+}
+
+.nav-primary-links {
+    display: inline-block
+}
+
+.nav-secondary-links {
+    list-style: none;
+    float: left;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.nav-secondary-menu {
+    padding: 0px;
+}
+/* SEARCH BAR*/
+
+.navSearchbar {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 29px;
+}
+
+.tftextinput2 {
+    padding: 7px;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    border: 1px solid #004471;
+    border-radius: 3px;
+}
+
+.tfbutton2 {
+    margin: 0 auto;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #004471;
+    background: #004471;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.tfbutton2:hover {
+    text-decoration: none;
+    background: #007ead;
+}
+/* Fixes submit button height problem in Firefox */
+
+.tfbutton2::-moz-focus-inner {
+    border: 0;
+}
+
+.tfclear {
+    clear: both;
+}
+/*BANNER*/
+
+.Banner {
+    width: 100%;
+    background-image: url(data-banner.jpg);
+    background-repeat: no-repeat;
+    background-color: #a4a5a5;
+    background-size: 100%;
+    margin-bottom: 10px;
+}
+
+.Banner-mainContent {
+    max-width: 400px;
+    float: right;
+    background-color: rgba(49, 54, 62, .75);
+    position: relative;
+    min-height: 275px;
+}
+
+.Banner-missionStatement {
+    font-family: 'Roboto';
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+    font-weight: normal;
+}
+
+.aboutText-Banner {
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    line-height: 25px;
+}
+
+.learnMore {
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+}
+
+.buttons-banner {
+    padding: 10px;
+    display: inline-flex;
+}
+
+.product-btn {
+    bottom: 10px;
+    left: 105px;
+    position: absolute;
+}
+
+.tutorial-btn {
+    bottom: 10px;
+    right: 120px;
+    position: absolute;
+}
+/* COLUMNS*/
+
+.products {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.card {
+    width: 49%;
+    display: inline-flex;
+    background-color: #fff;
+    min-height: 350px;
+    margin: 0 auto;
+}
+/*OUR PRODUCTS */
+
+.section-title {
+    font-weight: bold;
+}
+
+.card-description {
+    margin-bottom: 5px;
+}
+
+.text-container {
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+.link-container {
+    display: inline-table;
+    position: absolute;
+    right: 125px;
+    bottom: 30px;
+}
+/*EXTEND CYVERSE */
+/*NEWS, EVENTS, UPDATES*/
+
+.menuTabbed-wrapper {
+    padding: 0px;
+}
+
+.newsName {
+    margin: 0px;
+}
+
+.small-Link {
+    font-size: 12pt;
+}
+
+.newsLink {
+    font-size: 18px;
+}
+
+.whiteLink:hover {
+    text-decoration: underline;
+}
+
+.newsAll-link {
+    float: left;
+}
+
+.subscribeLink {
+    float: right;
+    position: relative;
+}
+
+.subscribeLink img {
+    position: absolute;
+    right: 80px;
+}
+/* NEWS ITEM IMAGES */
+
+.newsBackground {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 55%;
+}
+
+.newsItem-three {
+    background-image: url(newsimage2.jpg);
+}
+
+.newsItem-two {
+    background-image: url(newsimage3.jpg);
+}
+
+.newsItem-one {
+    background-image: url(newsimage1.jpg);
+}
+/*CONNECT WITH CYVERSE*/
+
+.informationalLinks-wrapper {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px grey;
+    margin-bottom: 10px;
+    min-height: 325px;
+    width: 50%;
+    display: inline-flex;
+}
+
+.referenceLinks {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-left: 9px;
+    
+}
+
+.referenceLinks-leftColumn,
+.referenceLinks-rightColumn {
+    width: 49%;
+}
+
+.referenceLink {
+    padding: 10px;
+    display: block;
+}
+
+/* Connect with Us */
+
+.menuConnect-wrapper {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px grey;
+    width: 50%;
+    min-height: 325px;
+    float: left;
+    padding: 15px;
+    padding: 10 px;
+    display: inline;
+}
+
+.socialmedia-section {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.socialmediaIcons {
+    display: inline-table;
+    padding: 2%;
+    position: relative;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.youtube {
+    height: 50px;
+    width: 70px;
+}
+
+.github {
+    height: 60px;
+    width: 60px;
+}
+
+.socialmediaText {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+/*FOOTER */
+
+.footer-wrapper {
+    color: #fff;
+    background-color: #003451;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.footerLinks-wrapper {
+    position: relative;
+    margin: 0 auto;
+    right: 0px;
+    left: 0px;
+    width: 51%;
+}
+
+.footerLinks {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.footerLinks:hover {
+    color: lightblue;
+}
+
+.footerLogo {
+    width: 20px;
+    margin-right: 5px;
+}
+/* MEDIA QUIERIES*/
+
+@media only screen and (max-width: 640px) {
+    .column {
+        width: 100%;
+    }
+    .footerLinks-wrapper {
+        width: 100%;
+    }
+    .nav-mobile {
+        visibility: visible;
+        position: fixed;
+        z-index: 99;
+        display: inline-flex;
+        bottom: 8px;
+    }
+    .notificationButton {
+        background-color: #FFF;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.50), 1px 1px 6px rgba(0, 0, 0, 0.50);
+        display: table;
+        background: #004471;
+        position: relative;
+    }
+    .mobileNavText {
+        position: absolute;
+        top: 10px;
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    @media only screen and (max-width: 620px) {
+        
+        .informationalLinks-wrapper, .menuConnect-wrapper  {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        
+        .navMobile {
+            right: 17px;
+        }
+        .notificationButton {
+            margin-right: 4%;
+        }
+    }
