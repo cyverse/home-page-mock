@@ -1,0 +1,95 @@
+
+.productCard {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1%;
+    padding-bottom: 35px;
+    box-shadow: 1px 1px 5px grey;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(255,255,255,0.56)), color-stop(100%, rgba(9,114,171,0)));
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0972ab', GradientType=1 );
+}
+
+.productCard--icon {
+    width: 85px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.iconProduct {
+    width:100%;
+    max-width: 64px;
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+.iconDatastore {
+    width:45px;
+    left:25px;
+}
+
+.iconDataCommons {
+    width: 75px;
+    left: 9px;
+    top: 10px;
+
+}
+
+.productCard-content {
+       width: 48%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.productCard--title {
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+    font-size: 16;
+    padding: 10px;
+    display:block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.productCard--description {
+font-family: 'Roboto', verdana, helvetica, sans-serif;
+font-size: 14px;
+padding: 5px;
+margin:0 auto;
+margin-bottom: 10px;
+
+}
+
+
+.buttonGroup {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.button-blue {
+    background-color: #004471;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
+    border-radius: 3px;
+    width: 100px;
+    display: inline-block;
+    border:solid 2px #004471;
+    padding: 5px;
+}
+
+.button-blue:hover{
+    color:#004471;
+    background-color: #fff;
+    border:solid 2px #004471;
+}
