@@ -33,6 +33,13 @@ body {
     display: none;
 }
 
+/* SLIDE OUT MENU */
+
+
+
+
+/* NAV */
+
 .secondaryNav,
 .primaryNav {
     background-color: #fff;
@@ -579,10 +586,12 @@ width: 51%;
     .navMobile {
         visibility: visible;
         position: fixed;
-        z-index: 1;
-        display: inline-block;
-        top:790px;
-        right:-20px;
+        z-index: 999;
+        display: table;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+        margin: auto;
     }
 
     .notificationButton {
@@ -605,8 +614,8 @@ width: 51%;
 
 
     .mobileNavText {
-        right: -17px;
-        top: -25px;
+        right: -13px;
+        bottom: -23px;
         position: relative;
         color:#fff;
         font-size:36px;
