@@ -6,14 +6,7 @@
     margin-bottom: 1%;
     padding-bottom: 35px;
     box-shadow: 1px 1px 5px grey;
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(255,255,255,0.56)), color-stop(100%, rgba(9,114,171,0)));
-background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
-background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
-background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
-background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0972ab', GradientType=1 );
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.56) 44%, rgba(9,114,171,0) 100%);
 }
 
 .productCard--icon {
