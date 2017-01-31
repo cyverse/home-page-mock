@@ -1,0 +1,30 @@
+{
+  "name": "home-page-mock",
+  "description": "An live prototype of the Cyverse Home Page",
+  "version": "0.0.1",
+  "author": "Cyverse",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/iPlantCollaborativeOpenSource/troposphere",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iPlantCollaborativeOpenSource/troposphere.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cverse/home-page-mock/issues"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "scripts": {
+    "build": "rm -rf ./dist; gulp styles; gulp swig; gulp images"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify": "0.0.14",
+    "gulp-sass": "^2.1.0",
+    "gulp-swig": "^0.8.0"
+  }
+}
