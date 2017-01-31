@@ -16,7 +16,7 @@
     "unsafe-perm": true
   },
   "scripts": {
-    "build": "rm -rf ./dist; gulp styles; gulp swig; gulp images"
+    "build": "rm -rf ./docs; gulp styles; gulp swig; gulp images"
   },
   "dependencies": {},
   "devDependencies": {

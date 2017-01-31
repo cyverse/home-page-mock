@@ -12,19 +12,19 @@ gulp.task('styles', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('swig', function() {
-    gulp.src('./src/*.html')
+    gulp.src('./src/index.html')
         .pipe(swig())
-        .pipe(gulp.dest('./dist/'))
+        .pipe(gulp.dest('./docs/'))
 });
 
 gulp.task('images', () =>
     gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('docs/images'))
 );
 
 gulp.task('compress', function() {
@@ -37,5 +37,5 @@ gulp.task('compress', function() {
         exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js']
     }))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
 });
