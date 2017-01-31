@@ -3,11 +3,6 @@
 @import 'products.scss';
 @import 'tabs.scss';
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('robotoregular.tff'); /* IE9 Compat Modes */
-  src: url('robotoregular.tff') format('truetype'), /* IE6-IE8 */
-}
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -17,11 +12,14 @@
      height: 0;
      }
 .clearfix {
-     display: inline-block; }
+     display: inline-block; 
+ }
 /* start commented backslash hack \*/
+
 * html .clearfix { 
     height: 1%; }
 .clearfix { display: block; }
+
 /* close commented backslash hack */
 
 * {
@@ -37,11 +35,6 @@ body {
     display: none;
 }
 
-/* SLIDE OUT MENU */
-
-
-
-
 /* NAV */
 
 .secondaryNav,
@@ -52,18 +45,10 @@ body {
 
 }
 
-.primaryNav {
-    }
-
-.secondaryNav {
-    
-}
-
 .logoHeader {
     width:100%;
     max-width: 550px;
 }
-
 
 .wrapper {
     width: 100%;
