@@ -228,7 +228,7 @@ body {
 
 .Banner {
     width: 100%;
-    background-image: url(data-banner.jpg);
+    background-image: url('../images/data-banner.jpg');
     background-repeat: no-repeat;
     background-color: #a4a5a5;
     background-size: 100%;
@@ -509,6 +509,7 @@ body {
         color: #fff;
         font-size: 12px;
     }
+}
     
     @media only screen and (max-width: 620px) {
         

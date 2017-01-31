@@ -1,3 +1,7 @@
+@import 'normalize';
+@import 'desktop';
+@import 'products.scss';
+@import 'tabs.scss';
 
 @font-face {
   font-family: 'Roboto';
@@ -128,7 +132,6 @@ a {
     background-repeat:no-repeat;
     background-color: #a4a5a5;
     background-size: 100%;
-    background-origin: 
 }
 
 .Banner-mainContent {
@@ -606,11 +609,11 @@ width: 51%;
     }
 
     .mobileButton {
-    background:#0971ab;
-    bottom:15px;
-    left:45px;
-    float: left;
-}
+        background:#0971ab;
+        bottom:15px;
+        left:45px;
+        float: left;
+    }
 
 
     .mobileNavText {
@@ -620,6 +623,7 @@ width: 51%;
         color:#fff;
         font-size:36px;
     }
+}
 
     @media only screen and (max-width: 620px) {
         .navMobile {
