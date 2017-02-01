@@ -1,0 +1,68 @@
+.Banner {
+    width: 100%;
+    background-image: url('../images/data-banner.jpg');
+    background-repeat:no-repeat;
+    background-color: #a4a5a5;
+    background-size: 100%;
+    height: 500px;
+}
+
+.Banner-mainContent {
+    max-width: 400px;
+    min-height: 200px;
+    float: right;
+    margin-top: 100px;
+    background-color:rgba(0,0,0,.35);
+}
+.Banner-missionStatement{
+    font-family: 'Roboto';
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+    font-weight: normal;
+}
+
+.aboutText-Banner {
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    line-height: 25px;
+}
+
+
+.learnMore {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.buttonBanner {
+    font-family: 'Roboto', Verdana, sans-serif;
+    width: 48%;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.buttonBanner:hover{
+    color: #fff;
+    background-color: #0971ab;
+}
+
+.buttongGroup-banner {
+    padding: 5px;
+}
+
+.ourProducts-wrapper {
+    padding:10px;
+    margin-bottom: 10px;
+}

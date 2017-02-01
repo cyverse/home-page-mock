@@ -1,0 +1,10 @@
+.SubFooter {
+    background: white;
+    padding: 20px 0;
+    .wrapper {
+        display: flex;
+        .col {
+            width: 50%;
+        }
+    }
+}

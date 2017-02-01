@@ -1,0 +1,24 @@
+/* MaintenanceAlert */
+
+.MaintenanceAlert {
+    color: white;
+    padding: 10px;
+    background-color: #f1592b;
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.MaintenanceAlert-text {
+    margin-right: 20px;
+}
+
+.MaintenanceAlert-close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
