@@ -3,29 +3,41 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     imagemin = require('gulp-imagemin'),
     minify = require('gulp-minify'),
+    browserSync = require('browser-sync'),
     swig = require('gulp-swig');
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'docs'
+    },
+  })
+});
 
 gulp.task('styles', function() {
     return gulp.src('src/scss/style.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(prefix({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('docs/css'));
+        .pipe(gulp.dest('docs/css'))
+	.pipe(browserSync.reload({
+	    stream: true
+    	}));
 });
 
 gulp.task('swig', function() {
     gulp.src('./src/index.html')
-        .pipe(swig())
+        .pipe(swig({defaults: { cache: false }}))
         .pipe(gulp.dest('./docs/'))
 });
 
-gulp.task('images', () =>
+gulp.task('images', () => {
     gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('docs/images'))
-);
+});
 
 gulp.task('compress', function() {
   gulp.src('src/js/*.js')
@@ -38,4 +50,10 @@ gulp.task('compress', function() {
         ignoreFiles: ['.combo.js', '-min.js']
     }))
     .pipe(gulp.dest('docs/js'))
+});
+
+gulp.task('watch', ['browserSync', 'styles'], () => {
+    gulp.watch('src/scss/**/*.scss', ['styles'] );
+    gulp.watch('src/*.html', ['swig'], browserSync.reload);
+    gulp.watch('app/js/**/*.js', ['compress'], browserSync.reload);
 });

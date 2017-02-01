@@ -1,4 +1,76 @@
-/* Style the list */
+/* TABBED MENU */
+.UpdatesSection {
+    padding: 100px 0;
+}
+
+.menuTabbed-wrapper {
+    padding: 0px;
+}
+
+.newsName {
+    margin: 0px;
+}
+
+.small-Link {
+    font-size: 12pt;
+}
+
+.newsLink {
+    font-size:18px;
+}
+
+.small-Link:hover, .newsLink:hover {
+    text-decoration: underline;
+
+}
+
+.whiteLink {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.whiteLink:hover {
+    text-decoration: underline;
+}
+
+.newsAll-link {
+    float:left;
+}
+
+.subscribeLink {
+    float:right;
+    position: relative;
+}
+
+.subscribeLink img {
+    position: absolute;
+    top:-1px;
+    right:68px;
+}
+
+/* NEWS ITEM IMAGES */
+
+.newsBackground {
+    background-color: rgba(255,255,255,.8);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 55%;
+}
+
+.newsItem-three {
+    background-image: url('../images/newsimage2.jpg');
+}
+
+.newsItem-two {
+    background-image: url('../images/newsimage3.jpg');
+}
+
+.newsItem-one {
+    background-image: url('../images/newsimage1.jpg');
+}
+
 .tabList {
     list-style-type: none;
     margin: 0;

@@ -1,0 +1,27 @@
+/* Explore CyVerse */
+
+.informationalLinks-wrapper {
+    margin-bottom: 10px;
+    min-height: 325px;
+    width: 50%;
+    float: left;
+}
+
+.referenceLinks {
+    padding-top:10px;
+}
+
+.referenceLinks-leftColumn, .referenceLinks-rightColumn {
+    width:49%;
+    display: inline-block;
+}
+
+.referenceLink {
+    float: left;
+    clear: both;
+    padding:10px;
+}
+
+.referenceLink:hover {
+    text-decoration: underline;
+}
