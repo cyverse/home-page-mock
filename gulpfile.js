@@ -6,6 +6,9 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     swig = require('gulp-swig');
 
+var data = require('./src/data.js');
+
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
@@ -27,9 +30,13 @@ gulp.task('styles', function() {
     	}));
 });
 
+var swigOpt = {
+    data: data,
+    defaults: { cache: false },
+};
 gulp.task('swig', function() {
     gulp.src('./src/index.html')
-        .pipe(swig({defaults: { cache: false }}))
+        .pipe(swig(swigOpt))
         .pipe(gulp.dest('./docs/'))
 });
 

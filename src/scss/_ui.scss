@@ -1,144 +1,91 @@
-.tfbutton2 {
-    margin: 0 auto;
-    padding: 5px;
+@mixin btnBase($padding, $fontSize) {
+    border-radius: 3px;
+    margin: 0;
+    padding: $padding;
+    font-size: $fontSize;
+    outline: none;
     cursor: pointer;
-    text-align: center;
     text-decoration: none;
-    color: #ffffff;
-    border: solid 1px #004471;
-    background: #004471;
-    border-top-left-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    /* Fixes submit button height problem in Firefox */
+    &::-moz-focus-inner {
+        border: 0;
+    }
 }
 
-.tfbutton2:hover {
-    text-decoration: none;
-    background: #007ead;
+.btn {
+    @include btnBase(5px 10px, 14px);
 }
 
-/* Fixes submit button height problem in Firefox */
-
-.tfbutton2::-moz-focus-inner {
-    border: 0;
+.btn-lg {
+    @include btnBase(10px 20px, 14px);
 }
 
-.link {
+.btn-sm {
+    @include btnBase(5px, 10px);
+}
+
+.btn-wire {
+    background: transparent;
+    border: solid 1px $primary-2;
+    color: $primary-2;
+    &:hover {
+        background: $primary-2;
+        border-color: $primary-2;
+        color: white;
+    }
+}
+
+.btn-wire-wht {
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.btn-wht {
+    background: white;
+    color: black;
+    opacity: .8;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn-primary {
+    background: $primary-2;
+    color: white;
+    &:hover {
+        background: darken($primary-2, 2);
+    }
+}
+
+.btn-group > .btn {
+    margin-right: 15px;
+}
+
+
+a.link {
     font-family: Verdana, sans-serif;
     font-size: 14px;
     text-decoration: none;
     color: #004471;
     padding: 5px;
+    &:hover {
+        text-decoration: none;
+    }
     &:visited {
         color: #004471;
     }
 }
 
-.link:hover {
-    text-decoration: none;
-}
-
-.white-link {
+a.white-link {
     color: #fff;
-}
-
-.white-link:hover {
-    text-decoration: none;
-}
-
-.dropshadow {
-    box-shadow: 1px 1px 5px grey;
-}
-
-.blue-button {
-    border: solid 1px #004471;
-    border-radius: 3px;
-    color: #004471;
-    background-color: #fff;
-    padding: 5px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.blue-button:hover {
-    border: solid 1px #004471;
-    border-radius: 3px;
-    color: #fff;
-    background-color: #004471;
-}
-.buttonGroup {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.button-blue {
-    background-color: #0971ab;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
-    border-radius: 3px;
-    width: 100px;
-    display: inline-block;
-    border:solid 2px #0971ab;
-    padding: 5px;
-}
-
-.button-blue:hover{
-    color:#0971ab;
-    background-color: #fff;
-    border:solid 2px #0971ab;
-}
-
-
-#tfnewsearch {
-
-    float:right;
-    padding: 5px;
-}
-
-.tftextinput2 {
-    margin: 0;
-    padding: 5px 15px;
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #666;
-    border: 1px solid #0971ab;
-    border-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-}
-
-.tfbutton2 {
-    margin: 0;
-    padding: 5px;
-    font-family: 'Roboto', Verdana, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    border: solid 1px #0971ab;
-    background: #0971ab;
-    border-top-left-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
-}
-
-.tfbutton2:hover {
-    text-decoration: none;
-    background: #007ead;
-}
-
-
-/* Fixes submit button height problem in Firefox */
-
-.tfbutton2::-moz-focus-inner {
-    border: 0;
-}
-
-.tfclear {
-    clear: both;
 }
