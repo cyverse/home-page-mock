@@ -1,7 +1,7 @@
 var data = {
     products: [
         { 
-            image: "./images/Discovery_blue.png", 
+            image: "./images/dnasubway_Blue.png", 
             title: "DNA Subway", 
             className: "DnaSubway", 
             description: "dhkjhfkhdkfh "
@@ -13,7 +13,7 @@ var data = {
             description: "Use hundreds of bioinformatics apps and manage data in a simple web interface."
             },
         { 
-            image: "images/bisQue_blue.png", 
+            image: "images/bisQue_Blue.png", 
             title: "BisQue Image Analysis", 
             className: "BisQue", 
             description: "Exchange, explore, and analyze biological images and their metadata."
@@ -31,13 +31,13 @@ var data = {
             description: "Explore and download data."
         },
         { 
-            image: "./images/Datastore_Blue.png", 
+            image: "./images/Datastore_blue.png", 
             title: "Data Store", 
             className: "DataStore", 
             description: "Store, manage, access, and share all the data related to your research."
         },
         { 
-            image: "./images/Learningcenter_Blue.png", 
+            image: "./images/Learningcenter_blue.png", 
             title: "Learning Center", 
             className: "LearningCenter", 
             description: "Explore resources and tutorials on our curated Wiki."
