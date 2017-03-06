@@ -1,8 +1,16 @@
 .text {
+    line-height: 1.5;
     font-family: Verdana, sans-serif;
     font-size: 16px;
-    padding: 5px;
     color: #31363e;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.t-title-1 {
+    font-size: 22px;
 }
 
 .white-text {

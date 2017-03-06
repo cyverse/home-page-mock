@@ -2,11 +2,25 @@
     background: white;
     padding: 100px 0;
     .wrapper {
-        display: flex;
-        align-items: center;
+        .row {
+            margin: 0 -20px;
+            display: flex;
+        }
         .col {
+            text-align: center;
             margin: 0 20px;
-            width: 50%;
+            padding-bottom: 50px;
+            width: 33.333%;
+            position: relative;
+        }
+        .btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .IconPlaceHolder {
+            margin-bottom: 40px;
         }
     }
 }
