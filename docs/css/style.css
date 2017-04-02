@@ -775,19 +775,16 @@ a.white-link {
   /* non-critical appearance styles */
   list-style: none;
   background: #004471; }
-
-.nav-item a {
-  /* non-critical appearance styles */
-  display: block;
-  padding: 1em;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2em;
-  text-decoration: none;
-  transition: color 0.2s, background 0.5s; }
-
-.nav-item a:hover {
-  color: white;
-  background: rgba(0, 0, 0, 0.3); }
+  .SideDrawer .Nav-link a {
+    display: block;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s; }
+    .SideDrawer .Nav-link a:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.3); }
 
 /* Nav Trigger */
 .SideDrawer_trigger {
@@ -907,8 +904,10 @@ body {
 
 /* MaintenanceAlert */
 .MaintenanceAlert {
+  position: relative;
   color: white;
   padding: 10px;
+  padding-right: 40px;
   background-color: #f1592b; }
   .MaintenanceAlert .wrapper {
     display: -ms-flexbox;
@@ -918,14 +917,21 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     margin: auto; }
+    .MaintenanceAlert .wrapper .btn-sm {
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .MaintenanceAlert-text {
-  margin-right: 20px; }
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin-right: 20px;
+  font-size: 12px; }
 
 .MaintenanceAlert-close {
   position: absolute;
-  right: 20px;
-  top: 10px; }
+  right: 10px;
+  top: 10px;
+  bottom: 10px; }
 
 .Banner {
   width: 100%;
@@ -946,8 +952,7 @@ body {
 
 .Banner-mainContent {
   max-width: 700px;
-  min-height: 200px;
-  background-color: rgba(0, 0, 0, 0.35); }
+  min-height: 200px; }
 
 .Banner-missionStatement {
   font-family: 'Roboto';
@@ -1000,23 +1005,28 @@ body {
   .SectionOne .wrapper .col {
     text-align: center;
     margin: 0 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     padding-bottom: 50px;
     position: relative; }
+    .SectionOne .wrapper .col:last-child {
+      margin-bottom: 0px; }
   .SectionOne .wrapper .btn {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0; }
-  .SectionOne .wrapper .IconPlaceHolder {
-    margin-bottom: 40px; }
+  .SectionOne .wrapper .image {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100px; }
   @media (min-width: 40em) {
     .SectionOne .wrapper .row {
       margin: 0 -20px;
       display: -ms-flexbox;
       display: flex; }
     .SectionOne .wrapper .col {
-      width: 33.333%; } }
+      width: 33.333%;
+      margin-bottom: 0px; } }
 
 .SectionTwo {
   background: #EFEFEF;
@@ -1029,6 +1039,8 @@ body {
       display: flex;
       -ms-flex-align: center;
       align-items: center; }
+      .SectionTwo .wrapper .image {
+        margin-bottom: 0; }
       .SectionTwo .wrapper .col {
         margin: 0 20px;
         width: 50%; } }
@@ -1046,6 +1058,8 @@ body {
       align-items: center;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse; }
+      .SectionThree .wrapper .image {
+        margin-bottom: 0; }
       .SectionThree .wrapper .col {
         margin: 0 20px;
         width: 50%; } }
@@ -1108,7 +1122,8 @@ body {
 
 .Footer-links {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
   .Footer-links li {
     list-style: none; }
   @media (min-width: 40em) {
@@ -1122,7 +1137,7 @@ body {
 
 a.Footer-link {
   display: block;
-  padding: 20px 30px;
+  padding: 15px 30px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   display: -ms-flexbox;

@@ -8,6 +8,9 @@
         .wrapper {
             display: flex;
             align-items: center;
+            .image {
+                margin-bottom: 0;
+            }
             .col {
                 margin: 0 20px;
                 width: 50%;

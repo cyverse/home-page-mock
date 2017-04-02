@@ -6,6 +6,7 @@
 .Footer-links {
     position: relative;
     margin: 0 auto;
+    padding: 0;
 
     li {
         list-style: none;    
@@ -20,7 +21,7 @@
 
 a.Footer-link {
     display: block;
-    padding: 20px 30px;
+    padding: 15px 30px;
     text-decoration: none;
     color: rgba(255,255,255,.7);
     display: flex;

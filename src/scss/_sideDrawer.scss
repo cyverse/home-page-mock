@@ -1,34 +1,34 @@
 .SideDrawer {
-  /* critical sizing and position styles */
-  max-width: 500px; 
-  width: 80%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  margin: 0px;
-  padding: 0px;
-  
-  /* non-critical appearance styles */
-  list-style: none;
-  background: $primary-2;
+      /* critical sizing and position styles */
+      max-width: 500px; 
+      width: 80%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      margin: 0px;
+      padding: 0px;
+      
+      /* non-critical appearance styles */
+      list-style: none;
+      background: $primary-2;
+
+    .Nav-link a {
+        display: block;
+        padding: 1em;
+        color: rgba(255,255,255,.8);
+        font-size: 1.2em;
+        text-decoration: none;
+        transition: color 0.2s, background 0.5s;
+        &:hover {
+            color: white;
+            background: rgba(0,0,0,.3);
+        }
+    }
 }
 
-.nav-item a {
-  /* non-critical appearance styles */
-  display: block;
-  padding: 1em;
-  color: rgba(255,255,255,.8);
-  font-size: 1.2em;
-  text-decoration: none;
-  transition: color 0.2s, background 0.5s;
-}
 
-.nav-item a:hover {
-  color: white;
-  background: rgba(0,0,0,.3);
-}
 
 /* Nav Trigger */
 .SideDrawer_trigger {

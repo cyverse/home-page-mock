@@ -9,6 +9,9 @@
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
+            .image {
+                margin-bottom: 0;
+            }
             .col {
                 margin: 0 20px;
                 width: 50%;
