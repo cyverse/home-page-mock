@@ -3,12 +3,24 @@
     <head>
         <title> CyVerse </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="./js/menutab.js"></script>
+        <script src="./js/sidedrawer.js"></script>
     </head>
     <body>
-        <!-- MAINTENANCE ALERT -->
+	<ul class="SideDrawer">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Portfolio</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Blog</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+
+
+	<div id="SiteWrap" class="SiteWrap">
+            <!-- MAINTENANCE ALERT -->
 <div class="MaintenanceAlert">
     <div class="wrapper">
         <div class="MaintenanceAlert-text">
@@ -23,9 +35,13 @@
     </div>
 </div>
 
-	<!-- NavBar -->
+            <!-- NavBar -->
 <div class="Header">
     <div class="wrapper">
+        <label for="SideDrawer_trigger">
+            <input  onclick="onShowSideDrawer()" type="checkbox" id="SideDrawer_trigger" class="SideDrawer_trigger" />
+        </label>
+
 
         <div class="Header-logo">
             <img src="./images/logo.png">
@@ -42,7 +58,6 @@
                 Status
             </a>
         </div>
-
     </div>
 </div>
 <nav class="Nav">
@@ -77,7 +92,7 @@
     </div>
 </nav>
 
-	<!-- BANNER -->
+            <!-- BANNER -->
 <div class="Banner-wrapper Banner clearfix">
     <div class="wrapper">
         <div class="Banner-mainContent clearfix">
@@ -92,7 +107,7 @@
 </div>
 
 
-	<section class="SectionOne">
+            <section class="SectionOne">
     <div class="wrapper">
         <div class="row">
             <div class="col">
@@ -144,10 +159,10 @@
     </div>
 </section>
 
-        <section class="SectionTwo">
+            <section class="SectionTwo">
     <div class="wrapper">
         <div class="col">
-            <div class="ImagePlaceHolder">
+            <div class="image ImagePlaceHolder">
             </div>
         </div>
         <div class="col">
@@ -172,8 +187,12 @@
     </div>
 </section>
 
-        <section class="SectionThree">
+            <section class="SectionThree">
     <div class="wrapper">
+        <div class="col">
+            <div class="image ImagePlaceHolder">
+            </div>
+        </div>
         <div class="col">
 
             <div class="t-title-1 text">
@@ -191,73 +210,74 @@
                 </a>
             </div>
         </div>
-        <div class="col">
-            <div class="ImagePlaceHolder">
-            </div>
-        </div>
     </div>
 </section>
 
-        <section class="SubFooter">
+            <section class="SubFooter">
     <div class="wrapper">
         <div class="col">
             <!-- Site Map -->    
-<div class="informationalLinks-wrapper wrapper clearfix">
-    <div class="referenceLinks-leftColumn">
-        <div class="referenceLinks section-title">
-            New to CyVerse?
+<div>
+    <h3 class = "t-title-1">
+        Site Links
+    </h3>
+    <div class="informationalLinks-wrapper wrapper clearfix">
+        <div class="referenceLinks-leftColumn">
+            <div class="referenceLinks section-title">
+                New to CyVerse?
+            </div>
+            <a href="#" class="referenceLink link">
+                Students
+            </a>
+            <a href="#" class="referenceLink link">
+                New Users
+            </a>
+            <a href="#" class="referenceLink link">
+                Educators
+            </a>
+            <a href="#" class="referenceLink link">
+                Researchers
+            </a>
+            <a href="#" class="referenceLink link"> 
+                Developers 
+            </a>
+            <a href="#" class="referenceLink link"> 
+                Advisors
+            </a>
         </div>
-        <a href="#" class="referenceLink link">
-            Students
-        </a>
-        <a href="#" class="referenceLink link">
-            New Users
-        </a>
-        <a href="#" class="referenceLink link">
-            Educators
-        </a>
-        <a href="#" class="referenceLink link">
-            Researchers
-        </a>
-        <a href="#" class="referenceLink link"> 
-            Developers 
-        </a>
-        <a href="#" class="referenceLink link"> 
-            Advisors
-        </a>
-    </div>
-    <div class="referenceLinks-rightColumn">
-        <div class="referenceLinks section-title">
-            Resources
+        <div class="referenceLinks-rightColumn">
+            <div class="referenceLinks section-title">
+                Resources
+            </div>
+            <a href="#" class="referenceLink link">
+                Products
+            </a>
+            <a href="#" class="referenceLink link">
+                FAQ
+            </a>
+            <a href="#" class="referenceLink link">
+                Learning Center 
+            </a>
+            <a href="#" class="referenceLink link">
+                CyVerse Wiki
+            </a>
+            <a href="#" class="referenceLink link">
+                Tutorials
+            </a>
+            <a href="#" class="referenceLink link">
+                Policies
+            </a>
         </div>
-        <a href="#" class="referenceLink link">
-            Products
-        </a>
-        <a href="#" class="referenceLink link">
-            FAQ
-        </a>
-        <a href="#" class="referenceLink link">
-            Learning Center 
-        </a>
-        <a href="#" class="referenceLink link">
-            CyVerse Wiki
-        </a>
-        <a href="#" class="referenceLink link">
-            Tutorials
-        </a>
-        <a href="#" class="referenceLink link">
-            Policies
-        </a>
     </div>
 </div>
 
-
         </div>
+        <hr class="lg-hide"/>
         <div class="col">
             <!-- REFERENCE LINKS-->
 
 <div class="SocialMedia"> 
-    <h3 class="Socialmedia-title">
+    <h3 class="t-title-1">
         Connect with Us
     </h3>
     <div class="clearfix">
@@ -316,28 +336,34 @@
     </div>
 </section>
 
-	<!--FOOTER-->
+            <!--FOOTER-->
 <div class="Footer">
-    <div class="Footer-links">
-        <a class ="Footer-link" href="#">
-            <img class= "Footer-logo" src="./images/smallLogo.png">
-            CyVerse
-        </a>
-        |
-        <a class= "Footer-link" href="#">
-            Staff Login
-        </a>
-        |
-        <a class ="Footer-link" href="#">
-            Open Source
-        </a>
-        |
-        <a class ="Footer-link" href="#">
-            <img class= "Footer-logo" src="./images/NSFLogo.png">
-            Funding
-        </a>
-    </div>
+    <ul class="Footer-links">
+        <li>
+            <a class ="Footer-link" href="#">
+                <img class= "Footer-logo" src="./images/smallLogo.png">
+                CyVerse
+            </a>
+        </li>
+        <li>
+            <a class= "Footer-link" href="#">
+                Staff Login
+            </a>
+        </li>
+        <li>
+            <a class ="Footer-link" href="#">
+                Open Source
+            </a>
+        </li>
+        <li>
+            <a class ="Footer-link" href="#">
+                <img class= "Footer-logo" src="./images/NSFLogo.png">
+                Funding
+            </a>
+        </li>
+    </ul>
 </div>
 
+	</div>
     </body>
 </html>

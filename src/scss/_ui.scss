@@ -1,4 +1,6 @@
 @mixin btnBase($padding, $fontSize) {
+    display: inline-block;
+    text-align: center;
     border-radius: 3px;
     margin: 0;
     padding: $padding;
@@ -30,6 +32,8 @@
 }
 
 .btn-wire {
+    text-align: center;
+    display: inline-block;
     background: transparent;
     border: solid 1px $primary-2;
     color: $primary-2;
@@ -41,6 +45,8 @@
 }
 
 .btn-wire-wht {
+    text-align: center;
+    display: inline-block;
     background: transparent;
     border: solid 1px white;
     color: white;
@@ -51,6 +57,8 @@
 }
 
 .btn-wht {
+    text-align: center;
+    display: inline-block;
     background: white;
     color: black;
     opacity: .8;
@@ -60,6 +68,8 @@
 }
 
 .btn-primary {
+    text-align: center;
+    display: inline-block;
     background: $primary-2;
     color: white;
     &:hover {

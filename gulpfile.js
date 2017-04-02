@@ -62,5 +62,5 @@ gulp.task('compress', function() {
 gulp.task('watch', ['browserSync', 'styles'], () => {
     gulp.watch('src/scss/**/*.scss', ['styles'] );
     gulp.watch('src/*.html', ['swig'], browserSync.reload);
-    gulp.watch('app/js/**/*.js', ['compress'], browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['compress'], browserSync.reload);
 });

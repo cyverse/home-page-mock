@@ -1,12 +1,17 @@
 .SectionTwo {
     background: #EFEFEF;
     padding: 100px 0;
-    .wrapper {
-        display: flex;
-        align-items: center;
-        .col {
-            margin: 0 20px;
-            width: 50%;
+    .image {
+        margin-bottom: 30px;
+    }
+    @media (min-width: 40em) {
+        .wrapper {
+            display: flex;
+            align-items: center;
+            .col {
+                margin: 0 20px;
+                width: 50%;
+            }
         }
     }
 }

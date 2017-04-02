@@ -2,15 +2,11 @@
     background: white;
     padding: 100px 0;
     .wrapper {
-        .row {
-            margin: 0 -20px;
-            display: flex;
-        }
         .col {
             text-align: center;
             margin: 0 20px;
+            margin-bottom: 200px;
             padding-bottom: 50px;
-            width: 33.333%;
             position: relative;
         }
         .btn {
@@ -22,5 +18,14 @@
         .IconPlaceHolder {
             margin-bottom: 40px;
         }
+            @media (min-width: 40em) {
+                .row {
+                    margin: 0 -20px;
+                    display: flex;
+                }
+                .col {
+                    width: 33.333%;
+                }
+            }
     }
 }

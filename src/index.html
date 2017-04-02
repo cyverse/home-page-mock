@@ -3,18 +3,23 @@
     <head>
         <title> CyVerse </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="./js/menutab.js"></script>
+        <script src="./js/sidedrawer.js"></script>
     </head>
     <body>
-        {% include "./MaintenanceAlert.html" %}
-	{% include "./Header.html" %}
-	{% include "./Banner.html" %}
-	{% include "./SectionOne.html" %}
-        {% include "./SectionTwo.html" %}
-        {% include "./SectionThree.html" %}
-        {% include "./SubFooter.html" %}
-	{% include "./Footer.html" %}
+	{% include "./SideDrawer.html" %}
+	<div id="SiteWrap" class="SiteWrap">
+            {% include "./MaintenanceAlert.html" %}
+            {% include "./Header.html" %}
+            {% include "./Banner.html" %}
+            {% include "./SectionOne.html" %}
+            {% include "./SectionTwo.html" %}
+            {% include "./SectionThree.html" %}
+            {% include "./SubFooter.html" %}
+            {% include "./Footer.html" %}
+	</div>
     </body>
 </html>

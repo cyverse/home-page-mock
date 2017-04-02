@@ -1,9 +1,15 @@
 .SubFooter {
     padding: 20px 0;
-    .wrapper {
-        display: flex;
-        .col {
-            width: 50%;
+    background: #ebf0f4;
+    .col {
+        margin-bottom: 50px;
+    }
+    @media (min-width: 40em) {
+        .wrapper {
+            display: flex;
+            .col {
+                width: 50%;
+            }
         }
     }
 }

@@ -387,6 +387,8 @@ a {
   margin: 0 auto; }
 
 .btn {
+  display: inline-block;
+  text-align: center;
   border-radius: 3px;
   margin: 0;
   padding: 5px 10px;
@@ -401,6 +403,8 @@ a {
     border: 0; }
 
 .btn-lg {
+  display: inline-block;
+  text-align: center;
   border-radius: 3px;
   margin: 0;
   padding: 10px 20px;
@@ -415,6 +419,8 @@ a {
     border: 0; }
 
 .btn-sm {
+  display: inline-block;
+  text-align: center;
   border-radius: 3px;
   margin: 0;
   padding: 5px;
@@ -429,6 +435,8 @@ a {
     border: 0; }
 
 .btn-wire {
+  text-align: center;
+  display: inline-block;
   background: transparent;
   border: solid 1px #004471;
   color: #004471; }
@@ -438,6 +446,8 @@ a {
     color: white; }
 
 .btn-wire-wht {
+  text-align: center;
+  display: inline-block;
   background: transparent;
   border: solid 1px white;
   color: white; }
@@ -446,6 +456,8 @@ a {
     color: black; }
 
 .btn-wht {
+  text-align: center;
+  display: inline-block;
   background: white;
   color: black;
   opacity: .8; }
@@ -453,6 +465,8 @@ a {
     opacity: 1; }
 
 .btn-primary {
+  text-align: center;
+  display: inline-block;
   background: #004471;
   color: white; }
   .btn-primary:hover {
@@ -747,30 +761,120 @@ a.white-link {
   padding: 6px;
   margin-bottom: 1%; }
 
+.SideDrawer {
+  /* critical sizing and position styles */
+  max-width: 500px;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  margin: 0px;
+  padding: 0px;
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #004471; }
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s; }
+
+.nav-item a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.3); }
+
+/* Nav Trigger */
+.SideDrawer_trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  left: -100px;
+  clip: rect(0, 0, 0, 0); }
+  @media (min-width: 40em) {
+    .SideDrawer_trigger {
+      display: none; } }
+
+label[for="SideDrawer_trigger"] {
+  /* critical positioning styles */
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain; }
+  @media (min-width: 40em) {
+    label[for="SideDrawer_trigger"] {
+      display: none; } }
+
+/* Make the Magic Happen */
+.SideDrawer_trigger + label, .SiteWrap {
+  transition: right 0.2s; }
+
+.SideDrawer_trigger:checked ~ .SiteWrap {
+  right: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+body {
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden; }
+
+.SiteWrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  z-index: 1; }
+
 /*NAV BAR*/
 .Header {
-  background-color: #fff; }
-  .Header .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0; }
+  @media (min-width: 40em) {
+    .Header .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 .Header-logo {
+  max-width: 150px;
   position: relative;
   z-index: 2;
-  width: 33%;
-  max-width: 300px;
-  float: left;
-  margin: 5px;
-  top: 20px; }
+  margin: 5px; }
   .Header-logo img {
     width: 100%; }
+  @media (min-width: 40em) {
+    .Header-logo {
+      max-width: 300px;
+      float: left;
+      top: 20px; } }
 
 .Header-menu {
+  display: none;
   list-style: none; }
+  @media (min-width: 40em) {
+    .Header-menu {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .Header-link {
   display: inline-block; }
@@ -782,11 +886,14 @@ a.white-link {
   position: relative; }
 
 .Nav-menu {
-  float: right;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  margin: 0; }
+  display: none; }
+  @media (min-width: 40em) {
+    .Nav-menu {
+      float: right;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0px;
+      margin: 0; } }
 
 .Nav-link {
   display: block;
@@ -890,15 +997,11 @@ a.white-link {
 .SectionOne {
   background: white;
   padding: 100px 0; }
-  .SectionOne .wrapper .row {
-    margin: 0 -20px;
-    display: -ms-flexbox;
-    display: flex; }
   .SectionOne .wrapper .col {
     text-align: center;
     margin: 0 20px;
+    margin-bottom: 200px;
     padding-bottom: 50px;
-    width: 33.333%;
     position: relative; }
   .SectionOne .wrapper .btn {
     position: absolute;
@@ -907,48 +1010,64 @@ a.white-link {
     left: 0; }
   .SectionOne .wrapper .IconPlaceHolder {
     margin-bottom: 40px; }
+  @media (min-width: 40em) {
+    .SectionOne .wrapper .row {
+      margin: 0 -20px;
+      display: -ms-flexbox;
+      display: flex; }
+    .SectionOne .wrapper .col {
+      width: 33.333%; } }
 
 .SectionTwo {
   background: #EFEFEF;
   padding: 100px 0; }
-  .SectionTwo .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center; }
-    .SectionTwo .wrapper .col {
-      margin: 0 20px;
-      width: 50%; }
+  .SectionTwo .image {
+    margin-bottom: 30px; }
+  @media (min-width: 40em) {
+    .SectionTwo .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center; }
+      .SectionTwo .wrapper .col {
+        margin: 0 20px;
+        width: 50%; } }
 
 .SectionThree {
   background: white;
   padding: 100px 0; }
-  .SectionThree .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center; }
-    .SectionThree .wrapper .col {
-      margin: 0 20px;
-      width: 50%; }
+  .SectionThree .image {
+    margin-bottom: 30px; }
+  @media (min-width: 40em) {
+    .SectionThree .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .SectionThree .wrapper .col {
+        margin: 0 20px;
+        width: 50%; } }
 
 .SubFooter {
-  padding: 20px 0; }
-  .SubFooter .wrapper {
-    display: -ms-flexbox;
-    display: flex; }
-    .SubFooter .wrapper .col {
-      width: 50%; }
+  padding: 20px 0;
+  background: #ebf0f4; }
+  .SubFooter .col {
+    margin-bottom: 50px; }
+  @media (min-width: 40em) {
+    .SubFooter .wrapper {
+      display: -ms-flexbox;
+      display: flex; }
+      .SubFooter .wrapper .col {
+        width: 50%; } }
 
 /* Explore CyVerse */
-.informationalLinks-wrapper {
-  margin-bottom: 10px;
-  min-height: 325px; }
-
 .referenceLinks {
   padding-top: 10px; }
 
-.referenceLinks-leftColumn, .referenceLinks-rightColumn {
+.referenceLinks-leftColumn,
+.referenceLinks-rightColumn {
   width: 49%;
   display: inline-block; }
 
@@ -961,17 +1080,9 @@ a.white-link {
   text-decoration: underline; }
 
 /* Connect with Us */
-.SocialMedia {
-  min-height: 325px;
-  padding: 15px;
-  padding: 10 px; }
-
-.Socialmedia-title {
-  text-align: center; }
-
 .SocialMedia-link {
   display: inline-block;
-  padding: 20px; }
+  padding: 0 20px 20px; }
 
 .socialIcon {
   width: 50px;
@@ -980,7 +1091,6 @@ a.white-link {
   position: relative; }
 
 .youtube {
-  height: 50px;
   width: 70px; }
 
 .github {
@@ -994,21 +1104,33 @@ a.white-link {
 
 .Footer {
   color: #fff;
-  background-color: #003451;
-  padding: 10px 0; }
+  background-color: #003451; }
 
 .Footer-links {
   position: relative;
-  margin: 0 auto;
-  width: 51%; }
+  margin: 0 auto; }
+  .Footer-links li {
+    list-style: none; }
+  @media (min-width: 40em) {
+    .Footer-links {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
-.Footer-link {
+a.Footer-link {
+  display: block;
+  padding: 20px 30px;
   text-decoration: none;
-  color: #fff;
-  padding: 10px; }
-
-.Footer-link:hover {
-  color: lightblue; }
+  color: rgba(255, 255, 255, 0.7);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+  a.Footer-link:hover {
+    color: white; }
 
 .Footer-logo {
   width: 20px;
