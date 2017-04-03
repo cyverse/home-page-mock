@@ -1,5 +1,5 @@
-.SectionTwo {
-    background: #EFEFEF;
+.SectionThree {
+    background: white;
     padding: 100px 0;
     .image {
         margin-bottom: 30px;
@@ -8,6 +8,7 @@
         .wrapper {
             display: flex;
             align-items: center;
+            flex-direction: row-reverse;
             .image {
                 margin-bottom: 0;
             }

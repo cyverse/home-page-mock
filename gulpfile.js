@@ -6,6 +6,9 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     swig = require('gulp-swig');
 
+var data = require('./src/data.js');
+
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
@@ -27,9 +30,13 @@ gulp.task('styles', function() {
     	}));
 });
 
+var swigOpt = {
+    data: data,
+    defaults: { cache: false },
+};
 gulp.task('swig', function() {
     gulp.src('./src/index.html')
-        .pipe(swig({defaults: { cache: false }}))
+        .pipe(swig(swigOpt))
         .pipe(gulp.dest('./docs/'))
 });
 
@@ -55,5 +62,5 @@ gulp.task('compress', function() {
 gulp.task('watch', ['browserSync', 'styles'], () => {
     gulp.watch('src/scss/**/*.scss', ['styles'] );
     gulp.watch('src/*.html', ['swig'], browserSync.reload);
-    gulp.watch('app/js/**/*.js', ['compress'], browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['compress'], browserSync.reload);
 });

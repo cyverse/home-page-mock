@@ -1,8 +1,10 @@
 /* MaintenanceAlert */
 
 .MaintenanceAlert {
+    position: relative;
     color: white;
     padding: 10px;
+    padding-right: 40px;
     background-color: #f1592b;
     
     .wrapper {
@@ -10,15 +12,21 @@
         align-items: center;
         justify-content: center;
         margin: auto;
+        .btn-sm {
+            flex-shrink: 0;
+        }
     }
 }
 
 .MaintenanceAlert-text {
+    flex-shrink: 1;
     margin-right: 20px;
+    font-size: 12px;
 }
 
 .MaintenanceAlert-close {
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 10px;
+    bottom: 10px;
 }

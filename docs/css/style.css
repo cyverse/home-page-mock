@@ -380,132 +380,126 @@ a {
 * {
   box-sizing: border-box; }
 
-.tfbutton2 {
-  margin: 0 auto;
-  padding: 5px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  border: solid 1px #004471;
-  background: #004471;
-  border-top-left-radius: 5px 5px;
-  border-bottom-left-radius: 5px 5px; }
+.wrapper {
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1100px;
+  margin: 0 auto; }
 
-.tfbutton2:hover {
-  text-decoration: none;
-  background: #007ead; }
-
-/* Fixes submit button height problem in Firefox */
-.tfbutton2::-moz-focus-inner {
-  border: 0; }
-
-.link {
-  font-family: Verdana, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  color: #004471;
-  padding: 5px; }
-  .link:visited {
-    color: #004471; }
-
-.link:hover {
-  text-decoration: none; }
-
-.white-link {
-  color: #fff; }
-
-.white-link:hover {
-  text-decoration: none; }
-
-.dropshadow {
-  box-shadow: 1px 1px 5px grey; }
-
-.blue-button {
-  border: solid 1px #004471;
-  border-radius: 3px;
-  color: #004471;
-  background-color: #fff;
-  padding: 5px;
-  margin-right: 10px;
-  text-align: center; }
-
-.blue-button:hover {
-  border: solid 1px #004471;
-  border-radius: 3px;
-  color: #fff;
-  background-color: #004471; }
-
-.buttonGroup {
-  position: absolute;
-  bottom: 10px;
-  right: 10px; }
-
-.button-blue {
-  background-color: #0971ab;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: 'Roboto', Verdana, Helvetica, sans-serif;
-  border-radius: 3px;
-  width: 100px;
+.btn {
   display: inline-block;
-  border: solid 2px #0971ab;
-  padding: 5px; }
-
-.button-blue:hover {
-  color: #0971ab;
-  background-color: #fff;
-  border: solid 2px #0971ab; }
-
-#tfnewsearch {
-  float: right;
-  padding: 5px; }
-
-.tftextinput2 {
+  text-align: center;
+  border-radius: 3px;
   margin: 0;
-  padding: 5px 15px;
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #666;
-  border: 1px solid #0971ab;
-  border-radius: 5px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px; }
-
-.tfbutton2 {
-  margin: 0;
-  padding: 5px;
-  font-family: 'Roboto', Verdana, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
+  /* Fixes submit button height problem in Firefox */ }
+  .btn:hover {
+    text-decoration: none; }
+  .btn::-moz-focus-inner {
+    border: 0; }
+
+.btn-lg {
+  display: inline-block;
   text-align: center;
+  border-radius: 3px;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
-  border: solid 1px #0971ab;
-  background: #0971ab;
-  border-top-left-radius: 5px 5px;
-  border-bottom-left-radius: 5px 5px; }
+  /* Fixes submit button height problem in Firefox */ }
+  .btn-lg:hover {
+    text-decoration: none; }
+  .btn-lg::-moz-focus-inner {
+    border: 0; }
 
-.tfbutton2:hover {
+.btn-sm {
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0;
+  padding: 5px;
+  font-size: 10px;
+  outline: none;
+  cursor: pointer;
   text-decoration: none;
-  background: #007ead; }
+  /* Fixes submit button height problem in Firefox */ }
+  .btn-sm:hover {
+    text-decoration: none; }
+  .btn-sm::-moz-focus-inner {
+    border: 0; }
 
-/* Fixes submit button height problem in Firefox */
-.tfbutton2::-moz-focus-inner {
-  border: 0; }
+.btn-wire {
+  text-align: center;
+  display: inline-block;
+  background: transparent;
+  border: solid 1px #004471;
+  color: #004471; }
+  .btn-wire:hover {
+    background: #004471;
+    border-color: #004471;
+    color: white; }
 
-.tfclear {
-  clear: both; }
+.btn-wire-wht {
+  text-align: center;
+  display: inline-block;
+  background: transparent;
+  border: solid 1px white;
+  color: white; }
+  .btn-wire-wht:hover {
+    background: white;
+    color: black; }
+
+.btn-wht {
+  text-align: center;
+  display: inline-block;
+  background: white;
+  color: black;
+  opacity: .8; }
+  .btn-wht:hover {
+    opacity: 1; }
+
+.btn-primary {
+  text-align: center;
+  display: inline-block;
+  background: #004471;
+  color: white; }
+  .btn-primary:hover {
+    background: #003e67; }
+
+.btn-group > .btn {
+  margin-right: 15px; }
+
+a.link {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #004471;
+  padding: 5px; }
+  a.link:hover {
+    text-decoration: none; }
+  a.link:visited {
+    color: #004471; }
+
+a.white-link {
+  color: #fff; }
 
 .text {
+  line-height: 1.5;
   font-family: Verdana, sans-serif;
   font-size: 16px;
-  padding: 5px;
   color: #31363e; }
+
+.section-title {
+  font-weight: bold; }
+
+.t-title-1 {
+  font-size: 22px; }
 
 .white-text {
   color: #fff; }
@@ -513,31 +507,6 @@ a {
 .bold {
   font-weight: bold; }
 
-.ImagePlaceHolder {
-  height: 400px;
-  width: 100%;
-  background: lightgrey; }
-
-/*MOBILE NAVIGATION*/
-.nav-mobile {
-  visibility: hidden;
-  display: none; }
-
-/* SEARCH BAR*/
-.navSearchbar {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 29px; }
-
-.tftextinput2 {
-  padding: 7px;
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
-  border: 1px solid #004471;
-  border-radius: 3px; }
-
-/* COLUMNS*/
 .products {
   width: 100%;
   margin-bottom: 2%; }
@@ -551,9 +520,6 @@ a {
   margin-bottom: 10px; }
 
 /*OUR PRODUCTS */
-.section-title {
-  font-weight: bold; }
-
 .card-description {
   margin-bottom: 5px; }
 
@@ -563,50 +529,25 @@ a {
   margin: 0 auto;
   position: relative; }
 
-.link-container {
-  display: inline-table;
-  position: absolute;
-  right: 125px;
-  bottom: 30px; }
+.ImagePlaceHolder {
+  height: 400px;
+  width: 100%;
+  background: lightgrey; }
 
-/* MEDIA QUIERIES*/
-@media only screen and (max-width: 640px) {
-  .column {
-    width: 100%; }
-  .footerLinks-wrapper {
-    width: 100%; }
-  .nav-mobile {
-    visibility: visible;
-    position: fixed;
-    z-index: 99;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    bottom: 8px; }
-  .notificationButton {
-    background-color: #FFF;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5), 1px 1px 6px rgba(0, 0, 0, 0.5);
-    display: table;
-    background: #004471;
-    position: relative; }
-  .mobileNavText {
+.IconPlaceHolder {
+  position: relative;
+  height: 100px;
+  width: 100%; }
+  .IconPlaceHolder:before {
+    border-radius: 900px;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: lightgrey;
     position: absolute;
-    top: 10px;
-    color: #fff;
-    font-size: 12px; } }
-
-@media only screen and (max-width: 620px) {
-  .informationalLinks-wrapper, .menuConnect-wrapper {
-    width: 100%;
-    margin-bottom: 0px; }
-  .navMobile {
-    right: 17px; }
-  .notificationButton {
-    margin-right: 4%; } }
+    margin: auto;
+    right: 0;
+    left: 0; }
 
 .productCard {
   position: relative;
@@ -820,30 +761,117 @@ a {
   padding: 6px;
   margin-bottom: 1%; }
 
+.SideDrawer {
+  /* critical sizing and position styles */
+  max-width: 500px;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  margin: 0px;
+  padding: 0px;
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #004471; }
+  .SideDrawer .Nav-link a {
+    display: block;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s; }
+    .SideDrawer .Nav-link a:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.3); }
+
+/* Nav Trigger */
+.SideDrawer_trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  left: -100px;
+  clip: rect(0, 0, 0, 0); }
+  @media (min-width: 40em) {
+    .SideDrawer_trigger {
+      display: none; } }
+
+label[for="SideDrawer_trigger"] {
+  /* critical positioning styles */
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain; }
+  @media (min-width: 40em) {
+    label[for="SideDrawer_trigger"] {
+      display: none; } }
+
+/* Make the Magic Happen */
+.SideDrawer_trigger + label, .SiteWrap {
+  transition: right 0.2s; }
+
+.SideDrawer_trigger:checked ~ .SiteWrap {
+  right: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+body {
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden; }
+
+.SiteWrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  z-index: 1; }
+
 /*NAV BAR*/
 .Header {
-  background-color: #fff; }
-  .Header .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0; }
+  @media (min-width: 40em) {
+    .Header .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 .Header-logo {
+  max-width: 150px;
   position: relative;
   z-index: 2;
-  width: 33%;
-  max-width: 300px;
-  float: left;
-  margin: 5px;
-  top: 20px; }
+  margin: 5px; }
   .Header-logo img {
     width: 100%; }
+  @media (min-width: 40em) {
+    .Header-logo {
+      max-width: 300px;
+      float: left;
+      top: 20px; } }
 
 .Header-menu {
+  display: none;
   list-style: none; }
+  @media (min-width: 40em) {
+    .Header-menu {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .Header-link {
   display: inline-block; }
@@ -855,11 +883,14 @@ a {
   position: relative; }
 
 .Nav-menu {
-  float: right;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  margin: 0; }
+  display: none; }
+  @media (min-width: 40em) {
+    .Nav-menu {
+      float: right;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0px;
+      margin: 0; } }
 
 .Nav-link {
   display: block;
@@ -873,8 +904,10 @@ a {
 
 /* MaintenanceAlert */
 .MaintenanceAlert {
+  position: relative;
   color: white;
   padding: 10px;
+  padding-right: 40px;
   background-color: #f1592b; }
   .MaintenanceAlert .wrapper {
     display: -ms-flexbox;
@@ -884,29 +917,42 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     margin: auto; }
+    .MaintenanceAlert .wrapper .btn-sm {
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .MaintenanceAlert-text {
-  margin-right: 20px; }
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin-right: 20px;
+  font-size: 12px; }
 
 .MaintenanceAlert-close {
   position: absolute;
-  right: 20px;
-  top: 10px; }
+  right: 10px;
+  top: 10px;
+  bottom: 10px; }
 
 .Banner {
   width: 100%;
-  background-image: url("../images/data-banner.jpg");
-  background-repeat: no-repeat;
-  background-color: #a4a5a5;
-  background-size: 100%;
-  height: 500px; }
+  /*    background-image: url('../images/data-banner.jpg');
+    background-repeat:no-repeat;
+    background-color: #a4a5a5;
+    background-size: 100%;
+*/
+  background: #0971ab; }
+  .Banner .wrapper {
+    height: 500px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .Banner-mainContent {
-  max-width: 400px;
-  min-height: 200px;
-  float: right;
-  margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.35); }
+  max-width: 700px;
+  min-height: 200px; }
 
 .Banner-missionStatement {
   font-family: 'Roboto';
@@ -956,47 +1002,86 @@ a {
 .SectionOne {
   background: white;
   padding: 100px 0; }
-  .SectionOne .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center; }
+  .SectionOne .wrapper .col {
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    position: relative; }
+    .SectionOne .wrapper .col:last-child {
+      margin-bottom: 0px; }
+  .SectionOne .wrapper .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .SectionOne .wrapper .image {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100px; }
+  @media (min-width: 40em) {
+    .SectionOne .wrapper .row {
+      margin: 0 -20px;
+      display: -ms-flexbox;
+      display: flex; }
     .SectionOne .wrapper .col {
-      margin: 0 20px;
-      width: 50%; }
+      width: 33.333%;
+      margin-bottom: 0px; } }
 
 .SectionTwo {
   background: #EFEFEF;
   padding: 100px 0; }
-  .SectionTwo .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center; }
-    .SectionTwo .wrapper .col {
-      margin: 0 20px;
-      width: 50%; }
+  .SectionTwo .image {
+    margin-bottom: 30px; }
+  @media (min-width: 40em) {
+    .SectionTwo .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center; }
+      .SectionTwo .wrapper .image {
+        margin-bottom: 0; }
+      .SectionTwo .wrapper .col {
+        margin: 0 20px;
+        width: 50%; } }
+
+.SectionThree {
+  background: white;
+  padding: 100px 0; }
+  .SectionThree .image {
+    margin-bottom: 30px; }
+  @media (min-width: 40em) {
+    .SectionThree .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .SectionThree .wrapper .image {
+        margin-bottom: 0; }
+      .SectionThree .wrapper .col {
+        margin: 0 20px;
+        width: 50%; } }
 
 .SubFooter {
-  background: white;
-  padding: 20px 0; }
-  .SubFooter .wrapper {
-    display: -ms-flexbox;
-    display: flex; }
-    .SubFooter .wrapper .col {
-      width: 50%; }
+  padding: 20px 0;
+  background: #ebf0f4; }
+  .SubFooter .col {
+    margin-bottom: 50px; }
+  @media (min-width: 40em) {
+    .SubFooter .wrapper {
+      display: -ms-flexbox;
+      display: flex; }
+      .SubFooter .wrapper .col {
+        width: 50%; } }
 
 /* Explore CyVerse */
-.informationalLinks-wrapper {
-  margin-bottom: 10px;
-  min-height: 325px;
-  width: 50%;
-  float: left; }
-
 .referenceLinks {
   padding-top: 10px; }
 
-.referenceLinks-leftColumn, .referenceLinks-rightColumn {
+.referenceLinks-leftColumn,
+.referenceLinks-rightColumn {
   width: 49%;
   display: inline-block; }
 
@@ -1009,17 +1094,9 @@ a {
   text-decoration: underline; }
 
 /* Connect with Us */
-.SocialMedia {
-  min-height: 325px;
-  padding: 15px;
-  padding: 10 px; }
-
-.Socialmedia-title {
-  text-align: center; }
-
 .SocialMedia-link {
   display: inline-block;
-  padding: 20px; }
+  padding: 0 20px 20px; }
 
 .socialIcon {
   width: 50px;
@@ -1028,7 +1105,6 @@ a {
   position: relative; }
 
 .youtube {
-  height: 50px;
   width: 70px; }
 
 .github {
@@ -1042,21 +1118,34 @@ a {
 
 .Footer {
   color: #fff;
-  background-color: #003451;
-  padding: 10px 0; }
+  background-color: #003451; }
 
 .Footer-links {
   position: relative;
   margin: 0 auto;
-  width: 51%; }
+  padding: 0; }
+  .Footer-links li {
+    list-style: none; }
+  @media (min-width: 40em) {
+    .Footer-links {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
-.Footer-link {
+a.Footer-link {
+  display: block;
+  padding: 15px 30px;
   text-decoration: none;
-  color: #fff;
-  padding: 10px; }
-
-.Footer-link:hover {
-  color: lightblue; }
+  color: rgba(255, 255, 255, 0.7);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+  a.Footer-link:hover {
+    color: white; }
 
 .Footer-logo {
   width: 20px;
@@ -1064,9 +1153,3 @@ a {
 
 body {
   background-color: #e2e2e2; }
-
-.wrapper {
-  width: 100%;
-  padding: 0 10px;
-  max-width: 1100px;
-  margin: 0 auto; }

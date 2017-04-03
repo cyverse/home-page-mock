@@ -3,118 +3,118 @@
     <head>
         <title> CyVerse </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="./js/menutab.js"></script>
+        <script src="./js/sidedrawer.js"></script>
     </head>
     <body>
-        <!-- MAINTENANCE ALERT -->
+	<ul class="SideDrawer">
+    <li class="Nav-link">
+    <a href="http://www.cyverse.org/about">
+        About
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="#">
+        Impact
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="#">
+        Use Cases
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="http://www.cyverse.org/staff">
+        Staff
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="http://www.cyverse.org/contact">
+        Contact
+    </a>
+</li>
+
+</ul>
+
+
+	<div id="SiteWrap" class="SiteWrap">
+            <!-- MAINTENANCE ALERT -->
 <div class="MaintenanceAlert">
     <div class="wrapper">
         <div class="MaintenanceAlert-text">
             Scheduled Maintenance for 01/30/2017 at 02:00 AM PST
         </div>
-
-        <div class="MaintenanceAlert-link">
-            <a href="#" class="blue-button">
-                Learn More
-            </a>
-        </div>
+        <a href="#" class="btn-sm btn-wire-wht">
+            Learn More
+        </a>
         <div class="MaintenanceAlert-close" onclick="this.parentNode.parentNode.style.display = 'none'">
             <img src="./images/close-icon-small.png" height="20" width="20">
         </div>
     </div>
 </div>
 
-	<!-- MOBILE NAVIGATION -->
-
-<div class="nav-mobile wrapper">
-    <div class="mobileButton notificationButton newsButton">
-        <p class="mobileNavText"> N
-        </p>
-    </div>
-    <div class="mobileButton notificationButton eventsButton">
-        <p class="mobileNavText"> E
-        </p>
-    </div>
-
-    <div class="mobileButton notificationButton newsButton">
-        <p class="mobileNavText"> N
-        </p>
-    </div>
-    <div class="mobileButton notificationButton eventsButton">
-        <p class="mobileNavText"> A
-        </p>
-    </div>
-
-    <div class="mobileButton notificationButton eventsButton">
-        <p class="mobileNavText"> H
-        </p>
-    </div>
-</div>
-
-
-	<!-- NavBar -->
+            <!-- NavBar -->
 <div class="Header">
     <div class="wrapper">
+        <label for="SideDrawer_trigger">
+            <input  onclick="onShowSideDrawer()" type="checkbox" id="SideDrawer_trigger" class="SideDrawer_trigger" />
+        </label>
+
 
         <div class="Header-logo">
             <img src="./images/logo.png">
         </div>
 
-        <ul class="Header-menu">
-            <li class="Header-link">
-                <a href="#" class="blue-button">
-                    Sign Up
-                </a>
-            </li>
-            <li class="Header-link">
-                <a href="#" class="blue-button">
-                    Log In
-                </a>
-            </li>
-            <li class="Header-link">
-                <a href="http://status.cyverse.org" class="blue-button">
+        <div class="Header-menu btn-group">
+            <a href="#" class="btn btn-wire">
+                Sign Up
+            </a>
+            <a href="#" class="btn btn-wire">
+                Log In
+            </a>
+            <a href="http://status.cyverse.org" class="btn btn-wire">
                 Status
             </a>
-            </li>
-        </ul>
-
+        </div>
     </div>
 </div>
-<div class="Nav">
+<nav class="Nav">
     <div class="wrapper clearfix">
         <ul class="Nav-menu">
             <li class="Nav-link">
-                <a href="http://www.cyverse.org/about">
-                    About
-                </a>
-            </li>
-            <li class="Nav-link">
-                <a href="#">
-                    Impact
-                </a>
-            </li>
-            <li class="Nav-link">
-                <a href="#">
-                    Use Cases
-                </a>
-            </li>
-            <li class="Nav-link">
-                <a href="http://www.cyverse.org/staff">
-                    Staff
-                </a>
-            </li>
-            <li class="Nav-link">
-                <a href="http://www.cyverse.org/contact">
-                    Contact
-                </a>
-            </li>
+    <a href="http://www.cyverse.org/about">
+        About
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="#">
+        Impact
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="#">
+        Use Cases
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="http://www.cyverse.org/staff">
+        Staff
+    </a>
+</li>
+<li class="Nav-link">
+    <a href="http://www.cyverse.org/contact">
+        Contact
+    </a>
+</li>
+
         </ul>
     </div>
-</div>
+</nav>
 
-	<!-- BANNER -->
+            <!-- BANNER -->
 <div class="Banner-wrapper Banner clearfix">
     <div class="wrapper">
         <div class="Banner-mainContent clearfix">
@@ -122,322 +122,184 @@
                 "Transforming Science through Data-driven Discovery"
             </h2>
             <p class="aboutText-Banner">
-                CyVerse enables users to design, deploy, and share their data, models, and tools within a community of data scientests.
+                CyVerse transcends traditional computing projects to fill a niche created by the computing era. Technology advancements have led to a new era of using diverse, distributed datasets to test larger, more complex hypotheses. Our powerful, extensible platforms provide computational infrastructure to handle massive datasets and large-scale analyses. We empower global collaboration to enable data-driven discovery.
             </p>
         </div>
     </div>
 </div>
 
 
-	<section class="SectionOne">
+            <section class="SectionOne">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col">
+                <img src="./images/connect-sm.png" class="image"/>
+
+                <div class="t-title-1 text">
+                    Connect
+                </div>
+
+                <p class="text">
+                    Bring your dataset or computational problem, study publicly accessible data hosted in our data commons, or federate with our resources to streamline your project. All available at the touch of a keypad from anywhere in the world.
+                </p>
+
+                <a href="#" class="btn btn-wire">
+                    Learn More
+                </a>
+            </div>
+            <div class="col">
+
+                <img src="./images/analyze-sm.png" class="image"/>
+                <div class="t-title-1 text">
+                    Analyze
+                </div>
+
+                <p class="text">
+                    Manage your data with our suite of platforms for secure storage and analysis, or integrate your own tools. CyVerse provides high-throughput computing allocations and cloud-based virtual machines so you can customize your computation environment.
+                </p>
+
+                <a href="#" class="btn btn-wire">
+                    Learn More
+                </a>
+            </div>
+            <div class="col">
+
+                <img src="./images/share-sm.png" class="image"/>
+                <div class="t-title-1 text">
+                    Collaborate 
+                </div>
+
+                <p class="text">
+                    Give colleagues around the world specialized access to your dataset or project, or make your completed dataset publicly accessible, track-able with a unique digital object identifier. Empower other researchers or students with our educational curricula.
+                </p>
+
+                <a href="#" class="btn btn-wire">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="SectionTwo">
     <div class="wrapper">
         <div class="col">
-            <div class="ImagePlaceHolder">
+            <div class="image ImagePlaceHolder">
             </div>
         </div>
         <div class="col">
 
-            <div class="section-title text">
+            <div class="t-title-1 text">
                 Explore CyVerse
             </div>
 
             <p class="text">
-                CyVerse provides life scientists with powerful computational infrastructure to handle massive datasets and complex analyses, thus enabling data-driven discovery and collaborations.
-
+                Our platforms offer a myriad of opportunities to streamline your science, including data management, secure storage, bioinformatics tools, image analyses, cloud services, community support, APIs, and more.
             </p>
 
-            <a href="productslist.html" class="blue-button link">
-                View Product List
-            </a>
-            <a href="#" class="blue-button link">
-                View Brochure
-            </a>
+            <div class="btn-group">
+                <a href="productslist.html" class="btn btn-wire">
+                    View Products
+                </a>
+                <a href="#" class="btn btn-wire">
+                    View Brochure
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
-        <section class="SectionTwo">
+            <section class="SectionThree">
     <div class="wrapper">
         <div class="col">
-
-            <div class="section-title text">
-                Expand CyVerse
+            <div class="image ImagePlaceHolder">
             </div>
-            <p class="text">
-                Through our Powered by CyVerse program, third-party projects can leverage our cyberinfrastructure to provide services to their users, access to the Data Store, and the ability to execute analyses on high-performance computing resources.
-
-            </p>
-            <a href="#" class="blue-button">
-                View Projects
-            </a>
-            <a href="#" class="blue-button">
-                Developer Resources
-            </a>
         </div>
         <div class="col">
-            <div class="ImagePlaceHolder">
+
+            <div class="t-title-1 text">
+                Extend CyVerse
+            </div>
+            <p class="text">
+                CyVerse builds community around science and cyberinfrastructure. Collaborate via our network of data researchers, developers, and educators, or federate your project to gain access to authentication services, high-throughput computing resources, and more.
+            </p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-wire">
+                    View Projects
+                </a>
+                <a href="#" class="btn btn-wire">
+                    Developer Resources
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-	<!-- NEWS, EVENTS, UPDATES -->
-<section class="UpdatesSection">
-    <div class="menuTabbed-wrapper clearfix wrapper">
-        <ul class="tabList">
-            <li class="tabSection newsSection">
-                <a href="javascript:void(0)" class="tabLinks active" onclick="openTab(event, 'News')">
-                    News
-                </a>
-            </li>
-            <li class="tabSection eventsSection">
-                <a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'Events')">
-                    Events
-                </a>
-            </li>
-            <li class="tabSection updatesSection">
-                <a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'Updates')">
-                    Updates
-                </a>
-            </li>
-        </ul>
-
-        <div id="News" class="tabContent newsContent">
-            <h3 class="tabTitle">
-                Featured News
-            </h3>
-            <!-- NEWS ITEM 1 -->
-            <div class="newsItem newsItem-one">
-                <div class="newsBackground clearfix">
-                    <h4 class="newsName"> 
-                        <a href="#" class="newsLink link">
-                            Earlham Institute Launches First CyVerse-UK Hub for ‘Big Data’ Analysis
-                        </a>
-                    </h4>
-                    <p class="eventDescription">
-                        The first UK-dedicated HPC cluster for CyVerse provides free, open-source genome analysis
-                    </p>
-
-                    <a href="#" class="small-Link link">
-                        Read More
-                    </a>
-                </div>
-            </div>
-            <!-- NEWS ITEM 2 -->
-            <div class="newsItem newsItem-two">
-                <div class="newsBackground clearfix">
-                    <h4 class="newsName"> 
-                            <a href="#" class="newsLink link">
-                                Supercomputers could improve cancer diagnostics
-                            </a>
-                        </h4>
-                    <p class="newsDescription">
-                        Supercomputers and immunology are merging to improve cancer diagnostic tests by up to 100 times.
-                    </p>
-                    <a href="#" class="small-Link link">
-                            Read More
-                        </a>
-                </div>
-            </div>
-            <!-- NEWS ITEM 3 -->
-            <div class="newsItem newsItem-three">
-                <div class="newsBackground clearfix">
-                    <h4 class="newsName"> 
-                    <a href="#" class="newsLink link">
-                        Mapping the Human Immune System
-                    </a>
-                </h4>
-                    <p class="newsDescription">
-                        CyVerse collaborator Adam Buntzman has harnessed supercomputers to map the human immunome.
-                    </p>
-                    <a href="#" class="small-Link link">
-                    Read More
-                </a>
-                </div>
-            </div>
-            <div class="subscribeBar clearfix wrapper">
-
-                <a href="#" class="newsAll-Link link white-link"> All News </a>
-                <a href="#" class="subscribeLink link white-link"> <img src="images/subscribe.png"> Subscribe </a>
-            </div>
-        </div>
-
-        <div id="Events" class="tabContent eventsContent">
-            <h3 class="tabTitle">
-                    Upcoming Events
-                </h3>
-            <!-- EVENT ITEM 1 -->
-            <div class="eventItem">
-                <h4 class="eventName"> 
-                        <a href="#" class="eventLink link">
-                            Cereal Genomics Workshop
-                        </a>
-                    </h4>
-                <p class="eventDate">
-                    October 19, 2016 – October 25, 2016
-                </p>
-                <p class="eventDescription">
-                    This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link link">...Read More</a>
-                </p>
-                <p class="eventLocation">
-                    Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
-                </p>
-            </div>
-            <!-- EVENT ITEM 2 -->
-            <div class="eventItem">
-                <h4 class="eventName"> 
-                        <a href="#" class="eventLink link">
-                            Event Workshop Title
-                        </a>
-                    </h4>
-                <p class="eventDate">
-                    October 19, 2016 – October 25, 2016
-                </p>
-                <p class="eventDescription">
-                    This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link link">...Read More</a>
-                </p>
-                <p class="eventLocation">
-                    Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
-                </p>
-            </div>
-            <!-- EVENT ITEM 3 -->
-            <div class="eventItem">
-                <h4 class="eventName"> 
-                    <a href="#" class="eventLink link">
-                        Event Workshop Title
-                    </a>
-                </h4>
-                <p class="eventDate">
-                    October 19, 2016 – October 25, 2016
-                </p>
-                <p class="eventDescription">
-                    This one-week workshop in Cereal Genomics will enable participants to take advantage of emerging genetic tools and the completed cereal genome sequences of most of the major cereal crops. The workshop will feature morning and evening lectures with afternoon lab exercises, including hands-on lab work and computer sessions in comparative anatomy, GWAS, Next Gen expression analysis, whole genome sequencing assembly, emerging model systems, genome editing and phenomics. <a href="http://www.cyverse.org/blog/events/cereal-genomics-workshop" class="small-Link link">...Read More</a>
-                </p>
-                <p class="eventLocation">
-                    Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
-                </p>
-            </div>
-        </div>
-
-        <div id="Updates" class="tabContent updatesContent">
-            <h3 class="tabTitle">
-                    Recent Tool Updates
-                </h3>
-            <!-- UPDATE ITEM 1 -->
-            <div class="updateItem">
-                <h4 class="updateName"> 
-                        <a href="#" class="updateLink link">
-                            Update Title
-                        </a>
-                    </h4>
-                <p class="updateDescription">
-                    Description.
-                </p>
-                <p class="updatedServices">
-                    List of affected services
-                </p>
-                <p class="updateDate">
-                    Dates
-                </p>
-            </div>
-            <!-- UPDATE ITEM 2 -->
-            <div class="updateItem">
-                <h4 class="updateName"> 
-                        <a href="#" class="updateLink link">
-                            Update Title
-                        </a>
-                    </h4>
-                <p class="updateDescription">
-                    Description.
-                </p>
-                <p class="updatedServices">
-                    List of affected services
-                </p>
-                <p class="updateDate">
-                    Dates
-                </p>
-            </div>
-            <!-- UPDATE ITEM 3 -->
-            <div class="updateItem">
-                <h4 class="updateName"> 
-                        <a href="#" class="updateLink link">
-                            Update Title
-                        </a>
-                    </h4>
-                <p class="updateDescription">
-                    Description.
-                </p>
-                <p class="updatedServices">
-                    List of affected services
-                </p>
-                <p class="updateDate">
-                    Dates
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <section class="SubFooter">
+            <section class="SubFooter">
     <div class="wrapper">
         <div class="col">
             <!-- Site Map -->    
-<div class="informationalLinks-wrapper wrapper clearfix">
-    <div class="referenceLinks-leftColumn">
-        <div class="referenceLinks section-title">
-            New to CyVerse?
+<div>
+    <h3 class = "t-title-1">
+        Site Links
+    </h3>
+    <div class="informationalLinks-wrapper wrapper clearfix">
+        <div class="referenceLinks-leftColumn">
+            <div class="referenceLinks section-title">
+                New to CyVerse?
+            </div>
+            <a href="#" class="referenceLink link">
+                Students
+            </a>
+            <a href="#" class="referenceLink link">
+                New Users
+            </a>
+            <a href="#" class="referenceLink link">
+                Educators
+            </a>
+            <a href="#" class="referenceLink link">
+                Researchers
+            </a>
+            <a href="#" class="referenceLink link"> 
+                Developers 
+            </a>
+            <a href="#" class="referenceLink link"> 
+                Advisors
+            </a>
         </div>
-        <a href="#" class="referenceLink link">
-            Students
-        </a>
-        <a href="#" class="referenceLink link">
-            New Users
-        </a>
-        <a href="#" class="referenceLink link">
-            Educators
-        </a>
-        <a href="#" class="referenceLink link">
-            Researchers
-        </a>
-        <a href="#" class="referenceLink link"> 
-            Developers 
-        </a>
-        <a href="#" class="referenceLink link"> 
-            Advisors
-        </a>
-    </div>
-    <div class="referenceLinks-rightColumn">
-        <div class="referenceLinks section-title">
-            Resources
+        <div class="referenceLinks-rightColumn">
+            <div class="referenceLinks section-title">
+                Resources
+            </div>
+            <a href="#" class="referenceLink link">
+                Products
+            </a>
+            <a href="#" class="referenceLink link">
+                FAQ
+            </a>
+            <a href="#" class="referenceLink link">
+                Learning Center 
+            </a>
+            <a href="#" class="referenceLink link">
+                CyVerse Wiki
+            </a>
+            <a href="#" class="referenceLink link">
+                Tutorials
+            </a>
+            <a href="#" class="referenceLink link">
+                Policies
+            </a>
         </div>
-        <a href="#" class="referenceLink link">
-            Products
-        </a>
-        <a href="#" class="referenceLink link">
-            FAQ
-        </a>
-        <a href="#" class="referenceLink link">
-            Learning Center 
-        </a>
-        <a href="#" class="referenceLink link">
-            CyVerse Wiki
-        </a>
-        <a href="#" class="referenceLink link">
-            Tutorials
-        </a>
-        <a href="#" class="referenceLink link">
-            Policies
-        </a>
     </div>
 </div>
 
-
         </div>
+        <hr class="lg-hide"/>
         <div class="col">
             <!-- REFERENCE LINKS-->
 
 <div class="SocialMedia"> 
-    <h3 class="Socialmedia-title">
+    <h3 class="t-title-1">
         Connect with Us
     </h3>
     <div class="clearfix">
@@ -496,28 +358,34 @@
     </div>
 </section>
 
-	<!--FOOTER-->
+            <!--FOOTER-->
 <div class="Footer">
-    <div class="Footer-links">
-        <a class ="Footer-link" href="#">
-            <img class= "Footer-logo" src="./images/smallLogo.png">
-            CyVerse
-        </a>
-        |
-        <a class= "Footer-link" href="#">
-            Staff Login
-        </a>
-        |
-        <a class ="Footer-link" href="#">
-            Open Source
-        </a>
-        |
-        <a class ="Footer-link" href="#">
-            <img class= "Footer-logo" src="./images/NSFLogo.png">
-            Funding
-        </a>
-    </div>
+    <ul class="Footer-links">
+        <li>
+            <a class ="Footer-link" href="#">
+                <img class= "Footer-logo" src="./images/smallLogo.png">
+                CyVerse
+            </a>
+        </li>
+        <li>
+            <a class= "Footer-link" href="#">
+                Staff Login
+            </a>
+        </li>
+        <li>
+            <a class ="Footer-link" href="#">
+                Open Source
+            </a>
+        </li>
+        <li>
+            <a class ="Footer-link" href="#">
+                <img class= "Footer-logo" src="./images/NSFLogo.png">
+                Funding
+            </a>
+        </li>
+    </ul>
 </div>
 
+	</div>
     </body>
 </html>

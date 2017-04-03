@@ -2,11 +2,36 @@
     background: white;
     padding: 100px 0;
     .wrapper {
-        display: flex;
-        align-items: center;
         .col {
+            text-align: center;
             margin: 0 20px;
-            width: 50%;
+            margin-bottom: 100px;
+            padding-bottom: 50px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0px;
+            }
         }
+        .btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .image {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 100px;
+        }
+            @media (min-width: 40em) {
+                .row {
+                    margin: 0 -20px;
+                    display: flex;
+                }
+                .col {
+                    width: 33.333%;
+                    margin-bottom: 0px;
+                }
+            }
     }
 }
